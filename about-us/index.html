@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="../bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <link rel="stylesheet" href="../styles/style.css">
+   </head>
+   <body>
+      <!--       <navbar-starat>          -->
+      <header>
+         <nav class="navbar navbar-expand-md shadow col-12 color-dark  ">
+            <div class="container-fluid">
+               <a href="../index.html" class="d-flex justify-content-center col-3 col-md-1 nav-link">
+                  <div class="navbar-brand active ">
+                     <img src="../gallery/brand-1.png" alt="" style="height: 2rem; width: 2rem;" class="d-flex align-items-center">
+                  </div>
+               </a>
+               <div class="offcanvas offcanvas-end" id="navv" data-bs-backdrop="false" data-bs-scroll="true" style="width: 200px;">
+                  <ul class="navbar-nav">
+                     <li class=" nav-item dropdown  ">
+                        <em>
+                           <a href="" class="nav-link ms-1 active mt-1 text-border dropdown-toggle "data-bs-toggle="dropdown">
+                           <i class="bi bi-film ms-2"></i>فیلم</a>
+                           <ul class="dropdown-menu">
+                              <li>
+                                 <a href="../pages/index.html" class="dropdown-item">نمونه</a>
+                              </li>
+                           </ul>
+                        </em>
+                     </li>
+                     <li class=" nav-item  dropdown  ">
+                        <em>
+                           <a href="" class="nav-link ms-1 active mt-1 text-border dropdown-toggle "data-bs-toggle="dropdown">
+                           <i class="bi bi-tv-fill ms-2"></i>سریال</a>
+                           <ul class="dropdown-menu">
+                              <li>
+                                 <a href="" class="dropdown-item">نمونه</a>
+                              </li>
+                           </ul>
+                        </em>
+                     </li>
+                     <li class=" nav-item  dropdown">
+                        <em>
+                           <a href="" class="nav-link ms-1 active mt-1 text-border dropdown-toggle "data-bs-toggle="dropdown">
+                           <i class="bi bi-house-fill ms-2 "></i>مستند</a>
+                           <ul class="dropdown-menu">
+                              <li>
+                                 <a href="" class="dropdown-item">نمونه</a>
+                              </li>
+                           </ul>
+                        </em>
+                     </li>
+                     <li class=" nav-item nav-item ">
+                        <em>
+                        <a href="#" class="nav-link ms-1 mt-1 active">
+                        <i class="bi bi-file-person-fill  ms-2"></i>تماس با ما </a>
+                        </em>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-6 col-md-2 ms-5 ">
+                  <form action="" class="mt-1 d-flex"style="font-family: FONT2; ">
+                     <input type="search" class="form-control  border-dark bg-light mt-1" placeholder="جستجو...... " >   
+                  </form>
+               </div>
+               <div>
+                  <h2>
+                     <a href="https://discord.gg/egPKHQqqjC" target="_blank" class=" d-flex text-decoration-none mt-3 ms-5 d-none d-md-block">
+                     <i class="bi bi-telegram"></i>
+                     </a>
+                  </h2>
+               </div>
+               <div onclick="myFunction(this)" data-bs-target="#navv" data-bs-toggle="offcanvas" class="animated-nav d-md-none">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <!--       >navbar-end<          -->
+      <main class="container-fluid d-flex justify-content-around">
+         <div class="col-12 d-flex justify-content-center">
+            <div class="full-site col-md-10 col-11 shadow-lg">
+               <!--       >abot-us1-start         -->
+               <div class="container">
+                  <div class="row">
+                     <div class="col-12">
+                        <h1 class="d-flex justify-content-center mt-5 mb-5 border border-dark-subtle rounded p-3 bg-primary-subtle">اگه مشکلی دیدی از اینجا میتونی به ما اطلاع بدی ❤</h1>
+                     </div>
+                  </div>
+               </div>
+               <div class="container-fluid foarm-index2 mt-5 " style="height: 550px;">
+                  <form action="" class="mt-5 col-11">
+                     <div class="row">
+                        <div class="col-25">
+                           <label for="fname">نام</label>
+                        </div>
+                        <div class="col-75">
+                           <input type="text" id="fname" name="firstname" placeholder="نام.....">
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-25">
+                           <label for="lname">نام خانوادگی</label>
+                        </div>
+                        <div class="col-75">
+                           <input type="text" id="lname" name="lastname" placeholder="نام خانوادگی......">
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-25">
+                           <label for="subject">موضوع</label>
+                        </div>
+                        <div class="col-75">
+                           <textarea id="subject" name="subject" placeholder="موضوع....." style="height:200px"></textarea>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-5 me-5">
+                           <input type="submit" value="ثبت اطلاعات">
+                        </div>
+                     </div>
+                  </form>
+               </div>
+               <!--       >abot-us1-end<          -->
+               <div class="space" style="height: 200px;"></div>
+               <!--       >abot-us2-start          -->
+               <div class="container bg-primary-subtle border border-dark-subtle rounded p-5 col-11">
+                  <div class="row">
+                     <h4>راه های ارتباطی ما</h4>
+                  </div>
+                  <p style="height: 20px;"></p>
+                  <div class="row">
+                     <div class="col-3">شماره تلفن</div>
+                     <div class="col-8">09*********</div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                     <div class="col-3">ایمیل</div>
+                     <div class="col-8">example@gmail.com</div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                     <div class="col-3">ادرس</div>
+                     <div class="col-8">.......................</div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                     <div class="col-3">شماره تلفن</div>
+                     <div class="col-8">09*********</div>
+                  </div>
+               </div>
+               <!--       >abot-us2-end          -->
+               <div class="space" style="height: 200px;"></div>
+            </div>
+         </div>
+      </main>
+      <!--       <end-sec2-start>          -->
+         <footer>
+            <div class="container-fluid bg-secondary">
+                  <div class="row  d-flex justify-content-evenly ">      
+                     <div class="col-11 col-md-4 me-3 mt-4">
+                        <div class="row">
+                           <div class="col-6 me-auto">
+                              <h5>
+                                 دسترسی سریع
+                              </h5>
+                           </div>
+                           <div class="col-6 ms-auto">
+                              <h5>
+                                 Quick Access
+                              </h5>
+                           </div>
+                        </div>
+                        <div class="row mt-4 mb-2">
+                           <div class="col-6">
+                              <h6>
+                                 <a href="../index.html" class="nav-link" >صفحه نخست</a>
+                              </h6>
+                           </div>
+                        </div>
+                        <hr class="col-12">
+                        <div class="row mt-2 mb-2">
+                           <div class="col-6">
+                              <h6>
+                                 <a href="" class="nav-link">بلاگ</a>
+                              </h6>
+                           </div>
+                        </div>
+                        <hr class="col-12">
+                        <div class="row mt-2 mb-2">
+                           <div class="col-6">
+                              <h6>
+                                 <a href="" class="nav-link">پنل کاربری</a>
+                              </h6>
+                           </div>
+                        </div>
+                     </div>
+                     
+                     <div class="col-12 mt-4 col-md-4 ">
+                        <div class="row p-3">
+                           <div class="col-12">
+                              <h5>
+                                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+                              </h5>
+                              <section class="border border-dark rounded mt-5 ">
+                                 <h4 class="mt-3 d-flex justify-content-center">
+                                    رسانه اینترنتی ......... در شبکه های اجتماعی
+                                 </h4>
+                                 <h2 class="d-flex justify-content-center p-2 ">
+                                    <a href="" class="text-decoration-none main-bi"><i class="bi bi-twitter ms-2 me-2 "></i></a>
+                                    <a href="" class="text-decoration-none main-bi"><i class="bi bi-pinterest ms-2 me-2 "></i></a>
+                                    <a href="" class="text-decoration-none main-bi"><i class="bi bi-discord ms-2 me-2 "></i></a>
+                                    <a href="" class="text-decoration-none main-bi"><i class="bi bi-instagram ms-2 me-2"></i></a>
+                                    <a href="" class="text-decoration-none main-bi"><i class="bi bi-telegram ms-2 me-2 "></i></a>
+                                 </h2>
+                              </section>
+                           </div>
+                        </div>
+                     </div>
+                     
+                        <div class="col-3 d-flex justify-content-end ms-3 mt-4  align-items-center ">
+                           <img src="../gallery/brand-1.png" alt="" style="height: 5rem; width: 5rem;" class=" mt-4 mb-4">
+                        </div>
+                  </div>
+            </div>
+         </footer>
+      <!--       <end-sec2-end>          -->
+      <a href="#" class="btn btn-success btn-outline-light back-to-top position-fixed bottom-0 start-0 " onclick="topFunction()" id="myBtn" >
+         <h5><i class="bi bi-chevron-double-up"></i></h5>
+      </a>
+      <!--       >toast-start<          -->
+      <div class="toast-container position-fixed end-0 bottom-0 p-3  " id="liveToast" style="margin-top: 55px;">
+         <div data-aos="fade-down-right">
+            <div id="liveToast" class="toast show shadow" role="alert" aria-live="assertive" aria-atomic="true" data-bs-dismiss="toast">
+               <div class="toast-header">
+                  <img src="../gallery/brand-1.png" class="rounded me-2 " alt="..." style="height: 40px; width: 45px;">
+                  <em>
+                  <strong class="me-auto  ">مدیریت سایت</strong>
+                  </em>
+                  <small class="ms-2">5 ثانیه قبل</small>
+                  <button type="button" class="btn-close ms-auto me-1" data-bs-dismiss="toast" aria-label="Close"></button>
+               </div>
+               <div class="toast-body">  به سایت ما خوش اومدی اگه مشکلی بود از<a href="#" class="me-1 ms-1">اینحا</a>بهمون خبر بده</div>
+            </div>
+         </div>
+      </div>
+      <!--       >toast-end<          -->
+   </body>
+   <script src="../bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script src="../scripts/index.js"></script>
+</html>

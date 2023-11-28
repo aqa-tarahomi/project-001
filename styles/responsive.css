@@ -1,0 +1,19 @@
+@media  (max-width:768px) {
+    .slide-text {
+        font-size: 25px;
+    }
+    
+    .slide-footer-text {
+        font-size: 20px;
+    }
+    .header-text{
+        margin: 0 auto;
+    }
+
+}
+@media (min-width:992px) {
+    .header-text{
+	width: auto;
+}
+
+}
