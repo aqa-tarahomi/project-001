@@ -9,11 +9,15 @@
     .header-text{
         margin: 0 auto;
     }
+    .arrow{
+        font-size: 17px;
+    }
 
 }
 @media (min-width:992px) {
     .header-text{
 	width: auto;
 }
+
 
 }

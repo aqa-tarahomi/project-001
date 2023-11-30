@@ -231,7 +231,7 @@ input[type="submit"] {
 	font-weight: 400;
 	margin-bottom: 8px;
 	border-radius: var(--border-radius);
-	;
+	
 }
 
 .fm-box-imdb {
@@ -309,7 +309,6 @@ input[type="submit"] {
 .custom-label {
 	border-radius: var(--border-radius);
 }
-
 
 .custom-dropdown {
 	background-color: var(--main-lite-background);
