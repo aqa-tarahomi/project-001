@@ -15,6 +15,7 @@ body {
 	font-family: "web-yekan";
 	background-color: var(--main-lite-background);
 	scroll-behavior: smooth;
+	pointer-events: auto;
 }
 
 .nav-text {
