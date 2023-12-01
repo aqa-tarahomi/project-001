@@ -3,257 +3,680 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
-      <link rel="stylesheet" href="../bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+      <title>تماس با ما</title>
+      <link rel="icon" href="../gallery/brand-1.png">
+      <link rel="stylesheet" href="../bootstrap-5.3.2-dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
       <link rel="stylesheet" href="../styles/style.css">
+      <link rel="stylesheet" href="../styles/responsive.css">
+      <link rel="stylesheet" href="../styles/variable.css">
    </head>
    <body>
-      <!--       <navbar-starat>          -->
+      <!-- navbar-start -->
       <header>
-         <nav class="navbar navbar-expand-md shadow col-12 color-dark  ">
-            <div class="container-fluid">
-               <a href="../index.html" class="d-flex justify-content-center col-3 col-md-1 nav-link">
-                  <div class="navbar-brand active ">
-                     <img src="../gallery/brand-1.png" alt="" style="height: 2rem; width: 2rem;" class="d-flex align-items-center">
+         <nav class="navbar navbar-expand-lg shadow col-12 color-dark">
+            <div class="container">
+               <a href="../index.html" class=" nav-link col-12 col-lg-1 d-flex justify-content-center" >
+                  <div class="navbar-brand active">
+                     <img src="../gallery/brand-1.png" alt="" style="height: 2.4rem; width: 2.4rem;" class="img-fluid m-auto ">
                   </div>
                </a>
-               <div class="offcanvas offcanvas-end" id="navv" data-bs-backdrop="false" data-bs-scroll="true" style="width: 200px;">
-                  <ul class="navbar-nav">
-                     <li class=" nav-item dropdown  ">
-                        <em>
-                           <a href="" class="nav-link ms-1 active mt-1 text-border dropdown-toggle "data-bs-toggle="dropdown">
-                           <i class="bi bi-film ms-2"></i>فیلم</a>
-                           <ul class="dropdown-menu">
-                              <li>
-                                 <a href="../pages/index.html" class="dropdown-item">نمونه</a>
-                              </li>
-                           </ul>
-                        </em>
+               <button class="navbar-toggler border-1 ms-3 mt-auto" type="button" style=" color: green;" data-bs-toggle="offcanvas" data-bs-target="#navv" aria-controls="navv">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="offcanvas offcanvas-end" id="navv" data-bs-backdrop="true" data-bs-scroll="true" tabindex="-1" style="width: 270px;">
+                  <div class="d-lg-none d-flex mt-3">
+                     <div class="row">
+                        <button type="button" class="btn-close d-lg-none mt-3 me-3 col-12 position-absolute" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                     </div>
+                     <div class="row col-12 h-100 m-auto">
+                        <img src="../gallery/brand-1.png" class="m-auto col-3" alt="">
+                     </div>
+                  </div>
+                  <ul class="navbar-nav ">
+                     <li class="nav-item dropdown me-2">
+                        <a href="" class="nav-link ms-1 active mt-1 text-border dropdown-toggle nav-text" data-bs-toggle="dropdown">
+                        <i class="bi bi-film ms-2"></i>فیلم</a>
+                        <ul class="dropdown-menu">
+                           <li>
+                              <a href="../pages/index.html" class="dropdown-item">نمونه</a>
+                           </li>
+                        </ul>
                      </li>
-                     <li class=" nav-item  dropdown  ">
-                        <em>
-                           <a href="" class="nav-link ms-1 active mt-1 text-border dropdown-toggle "data-bs-toggle="dropdown">
-                           <i class="bi bi-tv-fill ms-2"></i>سریال</a>
-                           <ul class="dropdown-menu">
-                              <li>
-                                 <a href="" class="dropdown-item">نمونه</a>
-                              </li>
-                           </ul>
-                        </em>
+                     <li class="nav-item dropdown me-2">
+                        <a href="" class="nav-link ms-1 active mt-1 text-border dropdown-toggle nav-text" data-bs-toggle="dropdown">
+                        <i class="bi bi-tv-fill ms-2"></i>سریال</a>
+                        <ul class="dropdown-menu">
+                           <li>
+                              <a href="" class="dropdown-item">نمونه</a>
+                           </li>
+                        </ul>
                      </li>
-                     <li class=" nav-item  dropdown">
-                        <em>
-                           <a href="" class="nav-link ms-1 active mt-1 text-border dropdown-toggle "data-bs-toggle="dropdown">
-                           <i class="bi bi-house-fill ms-2 "></i>مستند</a>
-                           <ul class="dropdown-menu">
-                              <li>
-                                 <a href="" class="dropdown-item">نمونه</a>
-                              </li>
-                           </ul>
-                        </em>
+                     <li class="nav-item dropdown me-2">
+                        <a href="" class="nav-link ms-1 active mt-1 text-border dropdown-toggle nav-text" data-bs-toggle="dropdown">
+                        <i class="bi bi-house-fill ms-2 "></i>مستند</a>
+                        <ul class="dropdown-menu">
+                           <li>
+                              <a href="#" class="dropdown-item">نمونه</a>
+                           </li>
+                        </ul>
                      </li>
-                     <li class=" nav-item nav-item ">
+                     <li class="nav-item nav-item me-2">
                         <em>
-                        <a href="#" class="nav-link ms-1 mt-1 active">
+                        <a href="#" class="nav-link ms-1 mt-1 active nav-text">
                         <i class="bi bi-file-person-fill  ms-2"></i>تماس با ما </a>
                         </em>
                      </li>
                   </ul>
                </div>
-               <div class="col-6 col-md-2 ms-5 ">
-                  <form action="" class="mt-1 d-flex"style="font-family: FONT2; ">
-                     <input type="search" class="form-control  border-dark bg-light mt-1" placeholder="جستجو...... " >   
+               <div class="col col-lg-2 ms-5"  id="searchbox">
+                  <form class="mt-1 d-flex" role="search">
+                     <input type="search" class="form-control border-dark bg-light mt-1 " placeholder="جستجو...... " >   
                   </form>
                </div>
-               <div>
-                  <h2>
-                     <a href="https://discord.gg/egPKHQqqjC" target="_blank" class=" d-flex text-decoration-none mt-3 ms-5 d-none d-md-block">
-                     <i class="bi bi-telegram"></i>
-                     </a>
-                  </h2>
-               </div>
-               <div onclick="myFunction(this)" data-bs-target="#navv" data-bs-toggle="offcanvas" class="animated-nav d-md-none">
-                  <div class="bar1"></div>
-                  <div class="bar2"></div>
-                  <div class="bar3"></div>
-               </div>
+               <small><button type="button" class="btn w-auto rounded-circle nav-text"><i class="bi bi-moon-fill"></i></button></small>
             </div>
          </nav>
       </header>
-      <!--       >navbar-end<          -->
-      <main class="container-fluid d-flex justify-content-around">
-         <div class="col-12 d-flex justify-content-center">
-            <div class="full-site col-md-10 col-11 shadow-lg">
-               <!--       >abot-us1-start         -->
-               <div class="container">
-                  <div class="row">
-                     <div class="col-12">
-                        <h1 class="d-flex justify-content-center mt-5 mb-5 border border-dark-subtle rounded p-3 bg-primary-subtle">اگه مشکلی دیدی از اینجا میتونی به ما اطلاع بدی ❤</h1>
+      <!-- navbar-end -->
+      <main class="mt-5">
+         <div class="container">
+            <div class="row gx-3">
+               <section class="col-11 col-lg-8 mx-auto mb-4">
+                  <div class="card border">
+                     <div class="card-body">
+                        <h2 ><a href="#" title="سوالات و مشکلات متداول" class="text-dark">سوالات و مشکلات متداول</a></h2>
+                    </div>
+                    <div class="col-11 mx-auto"><h4>چطور میتونم از سایت دانلود کنم؟ چرا نمیتونم دانلود کنم؟ و سوالاتی از این دست که مرتبط با مشکلات دانلود هستند:</h4>
+                        <p>در مرحله اول برای دانلود از سایت شما باید داخل ایران باشید افرادی که خارج از ایران زندگی میکنند متاسفانه امکان دانلود فیلم و سریال ها برایشان وجود ندارد. حال اگر شما داخل ایران زندگی میکنید و همچنان مشکل دانلود دارید مطمئن شوید که فیلترشکنتان خاموش باشد. در صورتی که از خاموش بودن فیلتر شکن خود مطمئن هستید و باز هم مشکل دانلود دارید یکبار حافظه کش مرورگرتان را پاک کنید و دوباره اقدام به دانلود کنید. همچنین لازم به ذکر است افرادی که گوشی آیفون دارند ابتدا باید اپلیکیشن Document [<a href="https://apps.apple.com/us/app/documents-mes-fichiers-lecteur/id364901807" target="_blank" rel="noopener">لینک دانلود</a>] را از فروشگاه اپ استور نصب کنند و سپس لینک های دانلود را کپی کرده و از طریق این اپلیکیشن اقدام به دانلود کنند. افرادی که از گوشی های اندرویدی یا کامپیوتر ویندوزی برای دانلود استفاده میکنند احتمالا به اپلیکیشن جانبی نیاز نخواهند داشت و با اینکه اجباری در نصب این مدل برنامه ها نیست اما توصیه میکنیم برای تجربه دانلود بهتر و سریعتر از یک دانلود منیجر برای دانلود استفاده کنند. دانلود منیجر پیشنهادی ما برای ویندوز Internet Download Manger و برای اندروید Advanced Download Manager [<a href="https://play.google.com/store/apps/details?id=com.dv.adm&amp;hl=en&amp;gl=US" target="_blank" rel="noopener">لینک دانلود</a>] میباشد. اگر تمام این راه حل ها را تست کردید و همچنان با مشکل دانلود مواجه بودید در قسمت نظرات فیلم یا سریال مربوطه مشکل را بصورت کامل و دقیق مطرح کنید تا در سریعترین زمان ممکن بررسی و حل شود.</p>
+                        <p><strong>چرا افراد خارج از ایران امکان دانلود ندارند؟</strong> این اتفاق دو دلیل داره که هر دو دلیل مانع بزرگی برای دانلود افراد خارج از ایران هستند : 1- بخاطر قانون کپی رایت اگر ما اجازه دانلود به افراد خارج از ایران بدهیم مشکلات متعددی برامون بوجود میاد که توضیح تمام این مشکلات خارج از حوصله است. 2- به این دلیل که ما سایت دانلود رایگان هستیم چاره ای جز استفاده از هاست دانلود اسپانسری رایگان نداریم و شرکت ارائه دهنده هاست دانلود به دلیل هزینه مازاد ترافیک بین الملل اجازه دانلود به افراد خارج از ایران نمیدهد.</p>
+                        <p><strong>چرا باید از برنامه های دانلود منیجر استفاده کنیم؟</strong> علت استفاده از دانلود منیجر این است که به شما امکانات متنوعی مثل قابلیت توقف دانلود، دانلود گروهی و &#8230; میدهد که در مرورگرها وجود ندارد. همچنین دانلود منیجرها دارای ساز و کاری هستند که از خرابی فایل دانلود جلوگیری میکند.</p>
+                        <p><strong>برای دانلود در سیستم عامل mac os چه کنیم؟</strong> برای دانلود در این سیستم عامل از مرورگر کروم و همچنین دانلود منیجر Progressive Downloader استفاده کنید.</p>
+                        <p><strong>در صورت انجام تمام موارد بالا اگر همچنان با مشکل دانلود مواجه بودید در بخش نظرات همان پست مشکل را بصورت دقیق و کامل اعلام کنید تا در سریعترین زمان ممکن بررسی و حل شود.</strong></p>
+                        <p>&nbsp;</p>
+                        <h3>چرا فیلم و سریال ها موقع پخش مشکل دارند؟ چرا فقط صدا یا تصویر پخش میشود؟ چرا زیرنویس فیلم و سریال ها فعال نیست؟ و سوالاتی از این دست که مرتبط با پخش فیلم و سریال ها هستند:</h3>
+                        <p>با توجه به گستردگی فرمت های تصویری و صوتی در بیشتر مواقع پخش کننده ویدیو پیشفرض که بر روی دستگاه شما نصب است توانایی پخش بسیاری از فیلم و سریال ها را ندارد. از همین روی نیاز است تا شما یک پخش کننده ویدیویی بروز و قدرتمند را برای پخش فیلم و سریال ها نصب کنید. پیشنهاد ما برای ویندوز یکی از نرم افزار های KM Playe و  VLC است که با سرچ در گوگل براحتی پیدا میشوند. برای اندروید از اپلیکیشن MX Player [<a href="https://donyayeserial1.fun/series/vinland-saga/" target="_blank" rel="noopener">لینک دانلود</a>] استفاده کنید و برای گوشی های آیفون از VLC یا Oplayer استفاده کنید. در صورتی که مشکل شما برای پخش فیلم یا سریال با نصب یک پخش کننده ویدیویی خوب حل نشد در قسمت نظرات فیلم یا سریال مربوطه با ذکر دقیق قسمت، فصل و کیفیت مشکل را اعلام کنید تا در سریعترین زمان ممکن بررسی و حل شود.</p>
+                        <p><strong>در صورت انجام تمام موارد بالا اگر همچنان با هر مشکل مرتبط با پخش فیلم و سریال ها مواجه بودید در بخش نظرات همان پست مشکل را بصورت کامل با ذکر دقیق فصل، قسمت و کیفیت اعلام کنید تا در سریعترین زمان ممکن بررسی و حل شود.</strong></p>
+                        <p>&nbsp;</p>
+                        <h3>توضیحات اصطلاحات بکار برده شده در بخش های مختلف سایت:</h3>
+                        <p><strong>نسخه سافت ساب چیست؟</strong> در نسخه های سافت ساب یک زیرنویس هماهنگ روی فیلم قرار گرفته که براحتی میتوان آنرا غیر فعال کرد. این زیرنویس ها به هیچ عنوان به فیلم نچسبیده اند و شما هر زمان که بخواهید میتوانید آن را با گزینه های پخش کننده ویدیو خود غیر فعال کنید. تنظیمات غیر فعال کردن زیرنویس هر پخش کننده متفاوت میباشد و با یک سرچ گوگل یا زمان گذاشتن برای خواندن گزینه های پخش کننده ویدیو میتوان راه اینکار را فهمید.</p>
+                        <p><strong>تفاوت کیفیت x265 با نسخه های عادی چیست؟</strong> حتما تابحال در سایت کیفیت هایی را دیده اید که در کنارشان کلمه x265 نوشته شده است. تفاوت این کیفیت با نسخه های عادی این است که همان کیفیت نسخه های عادی را در حجم کمتر  ارائه میدهند اما با این تفاوت که بدلیل الگوریتم فشرده سازی بکار رفته در آنها موقع پخش به پردازنده دستگاه فشار وارد میکنند و ممکن است که بعضی از دستگاه ها با پردازنده ضعیف تر هنگام پخش این فیلم ها با لگ و افت فریم همرا شوند.</p>
+                        <p><strong>آیا فیلم و سریال های شما سانسور است؟</strong> خیر تمامی فیلم و سریال های ما بدون سانسور میباشند.</p>
+                        <p><strong>نسخه زبان اصلی دارای چه زبانی است؟</strong> روی این نسخه همان زبانی گذاشته شده که فیلم یا سریال مد نظر شما با آن ساخته شده است. مثلا اگر سریالی با زبان ژاپنی ساخته شده باشد زبان اصلی آن میشود ژاپنی یا اگر با زبان انگلیسی ساخته شده باشد زبان اصلی آن میشود انگلیسی. لازم به ذکر است که زبان اصلی هر فیلم یا سریال در صفحه مربوط به همان فیلم یا سریال نوشته شده است.</p>
                      </div>
                   </div>
-               </div>
-               <div class="container-fluid foarm-index2 mt-5 " style="height: 550px;">
-                  <form action="" class="mt-5 col-11">
-                     <div class="row">
-                        <div class="col-25">
-                           <label for="fname">نام</label>
-                        </div>
-                        <div class="col-75">
-                           <input type="text" id="fname" name="firstname" placeholder="نام.....">
+                  <div class="card mt-2 border">
+                     <div class="container-fluid mt-5 " style="height: 550px;">
+                        <h2 class="text-center">با ما در ارتباط باشید</h2>
+                        <form action="" class="mt-5 col-12">
+                           <div class="row">
+                              <div class="col-12  ">
+                                 <label for="fname">نام</label>
+                              </div>
+                              <div class="col-12 ">
+                                 <input type="text" id="fname" name="firstname" placeholder="نام.....">
+                              </div>
+                           </div>
+                           <div class="row mt-2 mb-2">
+                              <div class="col-12 ">
+                                 <label for="lname">نام خانوادگی</label>
+                              </div>
+                              <div class="col-12  ">
+                                 <input type="text" id="lname" name="lastname" placeholder="نام خانوادگی......">
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-12 ">
+                                 <label for="subject">موضوع</label>
+                              </div>
+                              <div class="col-12 ">
+                                 <textarea id="subject" name="subject" placeholder="موضوع....." style="height:200px; max-height: 300px;" ></textarea>
+                              </div>
+                           </div>
+                           
+                        </form>
+                     </div>
+                     <div class="row col-11 col-lg-3 mx-auto mb-3 mt-3 me-lg-3">
+                        <a class="btn rounded-3 btn-outline-secondary" href="#" role="button"><i class="bi bi-download ms-2"></i> ثبت اطلاعات</a>
+                     </div>
+                  </div>
+               </section>
+
+
+
+               <aside class="col-11 col-lg-4 mx-auto ">
+                  <!-- aside-part1-start -->
+                  <section class="col-12 mb-4  ">
+                     <div class="card border">
+                        <header class="d-flex  align-items-baseline">
+                           <div class="col mt-2 me-3">
+                              <h5 style="font-size: 16px;"><i class="bi bi-film ms-2" ></i>فیلم های 2023</h5>
+                              <h6 style="font-size: 12px;">جدیدترین فیلم های روز دنیا </h6>
+                           </div>
+                           <div class="d-flex justify-content-end ms-2 h-100 ">
+                              <a class="btn rounded-3 btn-outline-secondary m-3" href="#" role="button">مشاهده بیشتر</a>
+                           </div>
+                        </header>
+                        <hr class="mb-2 mt-2 color-line col-11 m-auto">
+                        <section>
+                           <div class="row row-cols-3 g-2 p-4 h-100">
+                              <div class="col ">
+                                 <div class="card">
+                                    <h4><img src="../gallery/kaleidoscope-15058.jpg" class="card-img-top rounded aside-pic" alt="..."></h4>
+                                 </div>
+                              </div>
+                              <div class="col ">
+                                 <div class="card">
+                                    <h4><img src="../gallery/friends-1517.jpg" class="card-img-top rounded aside-pic" alt="..."></h4>
+                                 </div>
+                              </div>
+                              <div class="col ">
+                                 <div class="card">
+                                    <h4><img src="../gallery/chernobyl-1527.jpg" class="card-img-top rounded aside-pic " alt="..."></h4>
+                                 </div>
+                              </div>
+                              <div class="col ">
+                                 <div class="card">
+                                    <h4><img src="../gallery/the-last-of-us-7.jpg" class="card-img-top rounded aside-pic" alt="..."></h4>
+                                 </div>
+                              </div>
+                              <div class="col ">
+                                 <div class="card">
+                                    <h4><img src="../gallery/the-walking-dead-dead-city-14522.jpg" class="card-img-top rounded aside-pic" alt="..."></h4>
+                                 </div>
+                              </div>
+                              <div class="col ">
+                                 <div class="card">
+                                    <h4><img src="../gallery/attack-on-titan-1317.jpg" class="card-img-top rounded aside-pic" alt="..."></h4>
+                                 </div>
+                              </div>
+                           </div>
+                        </section>
+                     </div>
+                  </section>
+                  <!-- aside-part1-end -->
+                  <!-- aside-part2-start -->
+                  <section class="col-12 mb-4 ">
+                     <div class="card border">
+                        <header class="d-flex">
+                           <div class="col mt-2 me-3">
+                              <h5 style="font-size: 16px;"><i class="bi bi-film ms-2"   ></i> ژانرها </h5>
+                              <h6 style="font-size: 12px;">جدیدترین فیلم های روز دنیا </h6>
+                           </div>
+                        </header>
+                        <hr class="mb-2 mt-2 color-line col-11 m-auto">
+                        <div class="row row-cols-2 d-flex justify-content-between g-3 text-center mb-3 me-2 ms-2">
+                           <div class="col">
+                              <a href="#">
+                                 <div class="card justify-content-center aside-link p-0">
+                                    <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                       <h5 class="aside-text mt-1">sport</h5>
+                                       <h6 class="aside-text mt-1">51</h6>
+                                    </section>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="col">
+                              <a href="#">
+                                 <div class="card justify-content-center aside-link p-0">
+                                    <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                       <h5 class="aside-text mt-1">sport</h5>
+                                       <h6 class="aside-text mt-1">51</h6>
+                                    </section>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="col">
+                              <a href="#">
+                                 <div class="card justify-content-center aside-link p-0">
+                                    <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                       <h5 class="aside-text mt-1">sport</h5>
+                                       <h6 class="aside-text mt-1">51</h6>
+                                    </section>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="col">
+                              <a href="#">
+                                 <div class="card justify-content-center aside-link p-0">
+                                    <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                       <h5 class="aside-text mt-1">sport</h5>
+                                       <h6 class="aside-text mt-1">51</h6>
+                                    </section>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="col">
+                              <a href="#">
+                                 <div class="card justify-content-center aside-link p-0">
+                                    <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                       <h5 class="aside-text mt-1">sport</h5>
+                                       <h6 class="aside-text mt-1">51</h6>
+                                    </section>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="col">
+                              <a href="#">
+                                 <div class="card justify-content-center aside-link p-0">
+                                    <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                       <h5 class="aside-text mt-1">sport</h5>
+                                       <h6 class="aside-text mt-1">51</h6>
+                                    </section>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="col">
+                              <a href="#">
+                                 <div class="card justify-content-center aside-link p-0">
+                                    <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                       <h5 class="aside-text mt-1">sport</h5>
+                                       <h6 class="aside-text mt-1">51</h6>
+                                    </section>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="col">
+                              <a href="#">
+                                 <div class="card justify-content-center aside-link p-0">
+                                    <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                       <h5 class="aside-text mt-1">sport</h5>
+                                       <h6 class="aside-text mt-1">51</h6>
+                                    </section>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="col">
+                              <a href="#">
+                                 <div class="card justify-content-center aside-link p-0">
+                                    <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                       <h5 class="aside-text mt-1">sport</h5>
+                                       <h6 class="aside-text mt-1">51</h6>
+                                    </section>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="col">
+                              <a href="#">
+                                 <div class="card justify-content-center aside-link p-0">
+                                    <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                       <h5 class="aside-text mt-1">sport</h5>
+                                       <h6 class="aside-text mt-1">51</h6>
+                                    </section>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="col">
+                              <a href="#">
+                                 <div class="card justify-content-center aside-link p-0">
+                                    <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                       <h5 class="aside-text mt-1">sport</h5>
+                                       <h6 class="aside-text mt-1">51</h6>
+                                    </section>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="col">
+                              <a href="#">
+                                 <div class="card justify-content-center aside-link p-0">
+                                    <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                       <h5 class="aside-text mt-1">sport</h5>
+                                       <h6 class="aside-text mt-1">51</h6>
+                                    </section>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="col">
+                              <a href="#">
+                                 <div class="card justify-content-center aside-link p-0">
+                                    <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                       <h5 class="aside-text mt-1">sport</h5>
+                                       <h6 class="aside-text mt-1">51</h6>
+                                    </section>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="col">
+                              <a href="#">
+                                 <div class="card justify-content-center aside-link p-0">
+                                    <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                       <h5 class="aside-text mt-1">sport</h5>
+                                       <h6 class="aside-text mt-1">51</h6>
+                                    </section>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="col">
+                              <a href="#">
+                                 <div class="card justify-content-center aside-link p-0">
+                                    <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                       <h5 class="aside-text mt-1">sport</h5>
+                                       <h6 class="aside-text mt-1">51</h6>
+                                    </section>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="col">
+                              <a href="#">
+                                 <div class="card justify-content-center aside-link p-0">
+                                    <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                       <h5 class="aside-text mt-1">sport</h5>
+                                       <h6 class="aside-text mt-1">51</h6>
+                                    </section>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="col">
+                              <a href="#">
+                                 <div class="card justify-content-center aside-link p-0">
+                                    <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                       <h5 class="aside-text mt-1">sport</h5>
+                                       <h6 class="aside-text mt-1">51</h6>
+                                    </section>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="col">
+                              <a href="#">
+                                 <div class="card justify-content-center aside-link p-0">
+                                    <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                       <h5 class="aside-text mt-1">sport</h5>
+                                       <h6 class="aside-text mt-1">51</h6>
+                                    </section>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="col">
+                              <a href="#">
+                                 <div class="card justify-content-center aside-link p-0">
+                                    <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                       <h5 class="aside-text mt-1">sport</h5>
+                                       <h6 class="aside-text mt-1">51</h6>
+                                    </section>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="col">
+                              <a href="#">
+                                 <div class="card justify-content-center aside-link p-0">
+                                    <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                       <h5 class="aside-text mt-1">sport</h5>
+                                       <h6 class="aside-text mt-1">51</h6>
+                                    </section>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="col">
+                              <a href="#">
+                                 <div class="card justify-content-center aside-link p-0">
+                                    <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                       <h5 class="aside-text mt-1">sport</h5>
+                                       <h6 class="aside-text mt-1">51</h6>
+                                    </section>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="col">
+                              <a href="#">
+                                 <div class="card justify-content-center aside-link p-0">
+                                    <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                       <h5 class="aside-text mt-1">sport</h5>
+                                       <h6 class="aside-text mt-1">51</h6>
+                                    </section>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="col">
+                              <a href="#">
+                                 <div class="card justify-content-center aside-link p-0">
+                                    <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                       <h5 class="aside-text mt-1">sport</h5>
+                                       <h6 class="aside-text mt-1">51</h6>
+                                    </section>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="col">
+                              <a href="#">
+                                 <div class="card justify-content-center aside-link p-0">
+                                    <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                       <h5 class="aside-text mt-1">sport</h5>
+                                       <h6 class="aside-text mt-1">51</h6>
+                                    </section>
+                                 </div>
+                              </a>
+                           </div>
                         </div>
                      </div>
-                     <div class="row">
-                        <div class="col-25">
-                           <label for="lname">نام خانوادگی</label>
-                        </div>
-                        <div class="col-75">
-                           <input type="text" id="lname" name="lastname" placeholder="نام خانوادگی......">
+                  </section>
+                  <!-- aside-part2-end -->
+                  <!-- aside-part3-start -->
+                  <section class="col-12 g-5 mb-4 ">
+                     <div class="card border">
+                        <header class="d-flex  align-items-baseline mt-1 mb-2">
+                           <div class="col mt-3 me-3">
+                              <h6><i class="bi bi-graph-up-arrow ms-2"  style="font-size: 17px;"></i>پربازدید ترین فیلم و سریال ها</h6>
+                           </div>
+                        </header>
+                        <hr class="mb-2 mt-2 color-line col-11 m-auto">
+                        <div class="card">
+                           <div class="row row-cols-1  g-3 text-center mb-3 me-2 ms-2">
+                              <div class="col">
+                                 <a href="#">
+                                    <div class="card p-0">
+                                       <section class="d-flex align-items-center me-3 ms-3">
+                                          <div class="col-4"><img src="../gallery/game-of-thrones-1451.jpg" class=" rounded aside-pic card-img"  alt="..."></div>
+                                          <div class=" row col me-1" >
+                                             <div class="col-12 d-flex justify-content-start">
+                                                <h6>دانلود سریال.......... </h6>
+                                             </div>
+                                             <div class="col-12 d-flex justify-content-start ">
+                                                <i class="bi bi-star-fill text-warning ms-1 me-2"></i> 
+                                                <h6>8.5</h6>
+                                             </div>
+                                          </div>
+                                       </section>
+                                    </div>
+                                 </a>
+                              </div>
+                              <div class="col">
+                                 <a href="#">
+                                    <div class="card p-0">
+                                       <section class="d-flex align-items-center me-3 ms-3">
+                                          <div class="col-4"><img src="../gallery/kaleidoscope-15058.jpg" class=" rounded aside-pic card-img" alt="..."></div>
+                                          <div class=" row col me-1" >
+                                             <div class="col-12 d-flex justify-content-start">
+                                                <h6>دانلود سریال.......... </h6>
+                                             </div>
+                                             <div class="col-12 d-flex justify-content-start ">
+                                                <i class="bi bi-star-fill text-warning ms-1 me-2"></i> 
+                                                <h6>8.5</h6>
+                                             </div>
+                                          </div>
+                                       </section>
+                                    </div>
+                                 </a>
+                              </div>
+                              <div class="col">
+                                 <a href="#">
+                                    <div class="card  p-0">
+                                       <section class="d-flex align-items-center me-3 ms-3">
+                                          <div class="col-4"><img src="../gallery/the-walking-dead-dead-city-14522.jpg" class=" rounded aside-pic card-img" alt="..."></div>
+                                          <div class=" row col me-1" >
+                                             <div class="col-12 d-flex justify-content-start">
+                                                <h6>دانلود سریال.......... </h6>
+                                             </div>
+                                             <div class="col-12 d-flex justify-content-start ">
+                                                <i class="bi bi-star-fill text-warning ms-1 me-2"></i> 
+                                                <h6>8.5</h6>
+                                             </div>
+                                          </div>
+                                       </section>
+                                    </div>
+                                 </a>
+                              </div>
+                              <div class="col">
+                                 <a href="#">
+                                    <div class="card  p-0">
+                                       <section class="d-flex align-items-center me-3 ms-3 justify-content-between">
+                                          <div class="col-4"><img src="../gallery/the-last-of-us-7.jpg" class=" rounded aside-pic card-img" alt="..."></div>
+                                          <div class=" row col me-1" >
+                                             <div class="col-12 d-flex justify-content-start">
+                                                <h6>دانلود سریال.......... </h6>
+                                             </div>
+                                             <div class="col-12 d-flex justify-content-start ">
+                                                <i class="bi bi-star-fill text-warning ms-1 me-2"></i> 
+                                                <h6>8.5</h6>
+                                             </div>
+                                          </div>
+                                       </section>
+                                    </div>
+                                 </a>
+                              </div>
+                              <div class="col">
+                                 <a href="#">
+                                    <div class="card  p-0">
+                                       <section class="d-flex align-items-center me-3 ms-3">
+                                          <div class="col-4"><img src="../gallery/friends-1517.jpg" class=" rounded aside-pic card-img" alt="..."></div>
+                                          <div class=" row col me-1" >
+                                             <div class="col-12 d-flex justify-content-start">
+                                                <h6>دانلود سریال.......... </h6>
+                                             </div>
+                                             <div class="col-12 d-flex justify-content-start ">
+                                                <i class="bi bi-star-fill text-warning ms-1 me-2"></i> 
+                                                <h6>8.5</h6>
+                                             </div>
+                                          </div>
+                                       </section>
+                                    </div>
+                                 </a>
+                              </div>
+                              <div class="col">
+                                 <a href="#">
+                                    <div class="card  p-0">
+                                       <section class="d-flex align-items-center me-3 ms-3">
+                                          <div class="col-4"><img src="../gallery/attack-on-titan-1317.jpg" class=" rounded aside-pic card-img" alt="..."></div>
+                                          <div class=" row col me-1" >
+                                             <div class="col-12 d-flex justify-content-start">
+                                                <h6>دانلود سریال.......... </h6>
+                                             </div>
+                                             <div class="col-12 d-flex justify-content-start ">
+                                                <i class="bi bi-star-fill text-warning ms-1 me-2"></i> 
+                                                <h6>8.5</h6>
+                                             </div>
+                                          </div>
+                                       </section>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
                         </div>
                      </div>
-                     <div class="row">
-                        <div class="col-25">
-                           <label for="subject">موضوع</label>
-                        </div>
-                        <div class="col-75">
-                           <textarea id="subject" name="subject" placeholder="موضوع....." style="height:200px"></textarea>
-                        </div>
-                     </div>
-                     <div class="row">
-                        <div class="col-5 me-5">
-                           <input type="submit" value="ثبت اطلاعات">
-                        </div>
-                     </div>
-                  </form>
-               </div>
-               <!--       >abot-us1-end<          -->
-               <div class="space" style="height: 200px;"></div>
-               <!--       >abot-us2-start          -->
-               <div class="container bg-primary-subtle border border-dark-subtle rounded p-5 col-11">
-                  <div class="row">
-                     <h4>راه های ارتباطی ما</h4>
-                  </div>
-                  <p style="height: 20px;"></p>
-                  <div class="row">
-                     <div class="col-3">شماره تلفن</div>
-                     <div class="col-8">09*********</div>
-                  </div>
-                  <hr>
-                  <div class="row">
-                     <div class="col-3">ایمیل</div>
-                     <div class="col-8">example@gmail.com</div>
-                  </div>
-                  <hr>
-                  <div class="row">
-                     <div class="col-3">ادرس</div>
-                     <div class="col-8">.......................</div>
-                  </div>
-                  <hr>
-                  <div class="row">
-                     <div class="col-3">شماره تلفن</div>
-                     <div class="col-8">09*********</div>
-                  </div>
-               </div>
-               <!--       >abot-us2-end          -->
-               <div class="space" style="height: 200px;"></div>
+                  </section>
+                  <!-- aside-part3-end -->
+               </aside>
+
+
+
             </div>
          </div>
       </main>
-      <!--       <end-sec2-start>          -->
-         <footer>
-            <div class="container-fluid bg-secondary">
-                  <div class="row  d-flex justify-content-evenly ">      
-                     <div class="col-11 col-md-4 me-3 mt-4">
-                        <div class="row">
-                           <div class="col-6 me-auto">
-                              <h5>
-                                 دسترسی سریع
-                              </h5>
-                           </div>
-                           <div class="col-6 ms-auto">
-                              <h5>
-                                 Quick Access
-                              </h5>
-                           </div>
-                        </div>
-                        <div class="row mt-4 mb-2">
-                           <div class="col-6">
-                              <h6>
-                                 <a href="../index.html" class="nav-link" >صفحه نخست</a>
-                              </h6>
-                           </div>
-                        </div>
-                        <hr class="col-12">
-                        <div class="row mt-2 mb-2">
-                           <div class="col-6">
-                              <h6>
-                                 <a href="" class="nav-link">بلاگ</a>
-                              </h6>
-                           </div>
-                        </div>
-                        <hr class="col-12">
-                        <div class="row mt-2 mb-2">
-                           <div class="col-6">
-                              <h6>
-                                 <a href="" class="nav-link">پنل کاربری</a>
-                              </h6>
-                           </div>
-                        </div>
-                     </div>
-                     
-                     <div class="col-12 mt-4 col-md-4 ">
-                        <div class="row p-3">
-                           <div class="col-12">
-                              <h5>
-                                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
-                              </h5>
-                              <section class="border border-dark rounded mt-5 ">
-                                 <h4 class="mt-3 d-flex justify-content-center">
-                                    رسانه اینترنتی ......... در شبکه های اجتماعی
-                                 </h4>
-                                 <h2 class="d-flex justify-content-center p-2 ">
-                                    <a href="" class="text-decoration-none main-bi"><i class="bi bi-twitter ms-2 me-2 "></i></a>
-                                    <a href="" class="text-decoration-none main-bi"><i class="bi bi-pinterest ms-2 me-2 "></i></a>
-                                    <a href="" class="text-decoration-none main-bi"><i class="bi bi-discord ms-2 me-2 "></i></a>
-                                    <a href="" class="text-decoration-none main-bi"><i class="bi bi-instagram ms-2 me-2"></i></a>
-                                    <a href="" class="text-decoration-none main-bi"><i class="bi bi-telegram ms-2 me-2 "></i></a>
-                                 </h2>
-                              </section>
-                           </div>
-                        </div>
-                     </div>
-                     
-                        <div class="col-3 d-flex justify-content-end ms-3 mt-4  align-items-center ">
-                           <img src="../gallery/brand-1.png" alt="" style="height: 5rem; width: 5rem;" class=" mt-4 mb-4">
-                        </div>
+      <!-- toast-start -->
+      <section>
+         <a href="#" class="btn btn-success btn-outline-light back-to-top position-fixed bottom-0 start-0 " onclick="topFunction()">
+         <i class="bi bi-chevron-double-up h5" style="width: 50px; height: 50px;"></i> 
+         </a>
+         <div class="toast-container position-fixed  bottom-0 p-3"  style="margin-top: 55px;">
+            <div data-aos="fade-down-right">
+               <div class="toast show shadow" role="alert" aria-live="assertive" aria-atomic="true" data-bs-dismiss="toast">
+                  <div class="toast-header">
+                     <img src="../gallery/brand-1.png" class="rounded me-2 " alt="..." style="height: 40px; width: 45px;">
+                     <h6 class=" me-4"><em>مدیریت سایت</em></h6>
+                     <small class="me-2">5 ثانیه قبل</small>
+                     <button type="button" class="btn-close me-2" data-bs-dismiss="toast" aria-label="Close"></button>
                   </div>
+                  <h6 class="toast-body">به سایت ما خوش اومدی اگه مشکلی بود<a href="#" class="me-1 ms-1">از اینجا</a>بهمون خبر بده</h6>
+               </div>
             </div>
-         </footer>
-      <!--       <end-sec2-end>          -->
+         </div>
+      </section>
+      <!-- toast-end -->
+      <!-- footer-start -->
+      <footer>
+         <div class="container-fluid shadow-lg" style="background-color: #FFFFFF;">
+            <div class="row d-flex justify-content-evenly">
+               <div class="col-11 col-lg-4 me-3 mt-4">
+                  <div class="row">
+                     <div class="col-6 me-auto">
+                        <h5>
+                           دسترسی سریع
+                        </h5>
+                     </div>
+                     <div class="col-6 ms-auto">
+                        <h5>
+                           Quick Access
+                        </h5>
+                     </div>
+                  </div>
+                  <div class="row mt-4 mb-2">
+                     <div class="col-6">
+                        <h6>
+                           <a href="#" class="nav-link"  onclick="topFunction()">صفحه نخست</a>
+                        </h6>
+                     </div>
+                  </div>
+                  <hr class="col-12">
+                  <div class="row mt-2 mb-2">
+                     <div class="col-6">
+                        <h6>
+                           <a href="" class="nav-link">بلاگ</a>
+                        </h6>
+                     </div>
+                  </div>
+                  <hr class="col-12">
+                  <div class="row mt-2 mb-2">
+                     <div class="col-6">
+                        <h6>
+                           <a href="" class="nav-link">پنل کاربری</a>
+                        </h6>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-12 mt-4 col-lg-5 ">
+                  <div class="row p-3">
+                     <div class="col-12">
+                        <h5>
+                           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+                        </h5>
+                        <section class="border border-dark rounded mt-5 m-auto col-md-12  ">
+                           <h5 class="mt-3 m-auto me-2 d-flex justify-content-center">
+                              رسانه اینترنتی ......... در شبکه های اجتماعی
+                           </h5>
+                           <p class="d-flex justify-content-center p-2 ">
+                              <a href="" class="text-decoration-none main-bi h1"><i class="bi bi-twitter ms-2 me-2 "></i> </a>
+                              <a href="" class="text-decoration-none main-bi h1"><i class="bi bi-pinterest ms-2 me-2 "></i> </a>
+                              <a href="" class="text-decoration-none main-bi h1"><i class="bi bi-discord ms-2 me-2 "></i> </a>
+                              <a href="" class="text-decoration-none main-bi h1"><i class="bi bi-instagram ms-2 me-2"></i> </a>
+                              <a href="" class="text-decoration-none main-bi h2"><i class="bi bi-telegram ms-2 me-2 "></i> </a>
+                           </p>
+                        </section>
+                     </div>
+                  </div>
+               </div>
+               <div class="col col-lg-2 d-flex justify-content-center justify-content-lg-end ms-3 mt-4 align-items-center ">
+                  <img src="../gallery/brand-1.png" alt="" style="height: 5rem; width: 5rem;" class=" mt-4 mb-4">
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- footer-end -->
       <a href="#" class="btn btn-success btn-outline-light back-to-top position-fixed bottom-0 start-0 " onclick="topFunction()" id="myBtn" >
          <h5><i class="bi bi-chevron-double-up"></i></h5>
       </a>
-      <!--       >toast-start<          -->
-      <div class="toast-container position-fixed end-0 bottom-0 p-3  " id="liveToast" style="margin-top: 55px;">
-         <div data-aos="fade-down-right">
-            <div id="liveToast" class="toast show shadow" role="alert" aria-live="assertive" aria-atomic="true" data-bs-dismiss="toast">
-               <div class="toast-header">
-                  <img src="../gallery/brand-1.png" class="rounded me-2 " alt="..." style="height: 40px; width: 45px;">
-                  <em>
-                  <strong class="me-auto  ">مدیریت سایت</strong>
-                  </em>
-                  <small class="ms-2">5 ثانیه قبل</small>
-                  <button type="button" class="btn-close ms-auto me-1" data-bs-dismiss="toast" aria-label="Close"></button>
-               </div>
-               <div class="toast-body">  به سایت ما خوش اومدی اگه مشکلی بود از<a href="#" class="me-1 ms-1">اینحا</a>بهمون خبر بده</div>
-            </div>
-         </div>
-      </div>
-      <!--       >toast-end<          -->
    </body>
-   <script src="../bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+   <script src="../bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
    <script src="../scripts/index.js"></script>
 </html>

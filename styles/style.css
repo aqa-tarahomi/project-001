@@ -1,4 +1,4 @@
-* {
+*{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -24,7 +24,6 @@ body {
 	color: black;
 }
 .nav-text:hover {
-
 	transition: var(--main-transition);
 	text-shadow: 2px 2px 5px rgb(54, 54, 54);
 } 
@@ -105,18 +104,6 @@ input[type="submit"] {
 	border-radius: var(--border-radius);
 	cursor: pointer;
 	float: right;
-}
-
-.col-25 {
-	float: left;
-	width: 25%;
-	margin-top: 6px;
-}
-
-.col-75 {
-	float: left;
-	width: 75%;
-	margin-top: 6px;
 }
 
 .pagination a {
