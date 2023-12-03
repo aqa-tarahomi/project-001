@@ -71,12 +71,34 @@
                      </li>
                   </ul>
                </div>
-               <div class="col col-lg-2 ms-5"  id="searchbox">
-                  <form class="mt-1 d-flex" role="search">
-                     <input type="search" class="form-control border-dark bg-light mt-1 " placeholder="جستجو...... " >   
-                  </form>
+               <div class="nav-icon d-flex ">
+                  <div class=""  id="searchbox">
+                     <button type="button" class="btn rounded-circle nav-text" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                     <i class="bi bi-search"></i>
+                     </button>
+                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                           <div class="modal-content">
+
+                              <div class="col-12 modal-header p-2 d-flex justify-content-between align-items-center">
+                                 <h4 class="col"> جستجو فیلم یا سریال.....</h4>
+                                 <button type="button" class="col-2 btn-close me-auto" data-bs-dismiss="modal" aria-label="Close"></button> 
+                              </div>
+
+                              <div class="modal-body">
+                                 <form class="mt-1 d-flex" role="search">
+                                    <input type="search" class="form-control border-dark bg-light mt-1 " placeholder="جستجو...... " >   
+                                    <button class="btn btn-outline-success border-dark mt-1 me-1" type="submit">جستجو</button>
+                                 </form>
+
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+   
+                  <small><button type="button" class="btn rounded-circle nav-text  " ><i class="bi bi-moon-fill"></i></button></small>
                </div>
-               <small><button type="button" class="btn w-auto rounded-circle nav-text"><i class="bi bi-moon-fill"></i></button></small>
+            </div>
             </div>
          </nav>
       </header>
