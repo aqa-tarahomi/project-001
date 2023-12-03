@@ -1,6 +1,6 @@
 
 :root{
-    --main-green-background:#1884ff;
+    --main-green-background:rgb(33, 128, 236);
     --main-lite-background:#f8f9fa;
     --main-transition: all 0.2s;
     --text-shadow: 2px 2px 2px #05314b ;
