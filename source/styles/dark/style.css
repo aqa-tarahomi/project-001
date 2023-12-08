@@ -255,8 +255,8 @@ input[type="submit"] {
 .card-footer-text {
 	font-size: 17px;
 	font-weight: 500;
-	background-color: #041d3ade;
-	color:rgba(209, 209, 209, 0.562) ;
+	background-color: #0b2038de;
+	color:rgba(255, 255, 255, 0.562) ;
 }
 
 .aside-text {
@@ -290,7 +290,7 @@ input[type="submit"] {
 .aside-link:hover {
 	transition: var(--main-transition);
 	background-color: #041d3a;
-	color: #515151;
+	color:rgba(255, 255, 255, 0.719) ;
 }
 
 .header-pill {

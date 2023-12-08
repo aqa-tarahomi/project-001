@@ -16,6 +16,7 @@ body {
 	background-color: var(--main-lite-background);
 	scroll-behavior: smooth;
 	pointer-events: auto;
+	height: 100vh;
 }
 
 .nav-text {
