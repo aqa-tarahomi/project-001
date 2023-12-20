@@ -35,14 +35,14 @@ a {
 }
 
 .slide-link {
-	text-decoration: underline 1px rgb(255, 255, 255);
-	color: #0d6efd;
+	text-decoration: underline 1px rgb(151, 151, 151);
+	color: ghostwhite;
 	transition: all 0.2s;
 }
 .slide-link:hover{
 	transition: all 0.2s;
-	text-decoration: underline 2px #0d6efd;
-	color: rgb(151, 151, 151)
+	text-decoration: underline 2px ghostwhite;
+	color: rgb(151, 151, 151);
 }
 
 ul li {
@@ -73,11 +73,11 @@ ul li {
 
 .slide-text {
 	text-shadow: var(--text-shadow);
-	font-size: 37px;
+	font-size: 4vh;
 }
 
 .slide-footer-text {
-	font-size: 27px;
+	font-size: 3vh;
 	text-shadow: var(--text-shadow);
 }
 
@@ -274,7 +274,6 @@ input[type="submit"] {
 .aside-link {
 	border: solid 1px #9ec5fe;
 	border-radius: 10px !important;
-	color: #515151;
 	transition: var(--main-transition);
 }
 
@@ -284,7 +283,7 @@ input[type="submit"] {
 
 .aside-link:hover {
 	transition: var(--main-transition);
-	background-color: #041d3a;
+	background-color: #00265f;
 	color: ghostwhite;
 }
 

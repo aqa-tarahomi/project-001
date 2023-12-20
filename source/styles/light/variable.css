@@ -1,9 +1,9 @@
 
 :root{
-    --main-green-background:rgb(33, 128, 236);
+    --main-green-background:#2163d4;
     --main-lite-background:#f8f9fa;
     --main-transition: all 0.2s;
-    --text-shadow: 2px 2px 2px #05314b ;
+    --text-shadow: 3px 3px 4px #000000 ;
     --border-radius:14px;
     --main-blue-background:#cfe2ff;
 }
