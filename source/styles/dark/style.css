@@ -279,7 +279,7 @@ input[type="submit"] {
 .aside-link {
 	border-radius: 10px !important;
 	color: ghostwhite;
-	background-color: #1e2125;
+	background-color: #292929;
 	transition: var(--main-transition);
 }
 
@@ -289,7 +289,7 @@ input[type="submit"] {
 
 .aside-link:hover {
 	transition: var(--main-transition);
-	background-color: #041d3a;
+	background-color: #0a2a4e;
 	color:rgba(255, 255, 255, 0.719) ;
 }
 
