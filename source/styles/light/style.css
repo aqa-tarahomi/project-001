@@ -73,11 +73,11 @@ ul li {
 
 .slide-text {
 	text-shadow: var(--text-shadow);
-	font-size: 4vh;
+	font-size: 3vh;
 }
 
 .slide-footer-text {
-	font-size: 3vh;
+	font-size: 2vh;
 	text-shadow: var(--text-shadow);
 }
 
