@@ -289,8 +289,8 @@ input[type="submit"] {
 
 .aside-link:hover {
 	transition: var(--main-transition);
-	background-color: #0a2a4e;
-	color:rgba(255, 255, 255, 0.719) ;
+	background-color: #7c7c7c;
+	color:rgb(255, 255, 255) ;
 }
 
 .header-pill {
