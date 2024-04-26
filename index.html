@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>صفحه نخست</title>
+      <link rel="icon" href="source/gallery/brand-1.png">
+      <link rel="stylesheet" href="source/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <link rel="stylesheet" href="source/styles/responsive.css">
+      <link rel="stylesheet" href="source/styles/variable.css">
+      <link rel="stylesheet" href="source/styles/style.css">
+   </head>
+   <body data-bs-theme="auto">
+
+      <!-- navbar-start -->
+      <header>
+         <nav class="navbar navbar-expand-lg shadow col-12 color-dark">
+            <div class="container">
+               <a href="index.html" class=" nav-link col-12 col-lg-1 d-flex justify-content-center" >
+                  <div class="navbar-brand active">
+                     <img src="source/gallery/brand-1.png" alt="" style="height: 2.4rem; width: 2.4rem;" class="img-fluid m-auto ">
+                  </div>
+               </a>
+               <button class="navbar-toggler border-1 ms-3 mt-auto" type="button" style=" color: green;" data-bs-toggle="offcanvas" data-bs-target="#navv" aria-controls="navv">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="offcanvas offcanvas-end" id="navv" data-bs-backdrop="true" data-bs-scroll="true" tabindex="-1" style="width: 270px;">
+                  <div class="d-lg-none mt-3">
+                     <div class="row d-flex justify-content-between align-items-center ms-3">
+                        <img src="source/gallery/brand-1.png" class=" col-3 me-2" alt="">
+                        <button type="button" class="btn-close d-lg-none col-9 me-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button> 
+                     </div>
+                  </div>
+                  <ul class="navbar-nav ">
+                     <li class="nav-item  me-2">
+                        <a href="#" class="nav-link ms-1 active mt-1 text-border nav-text" data-bs-toggle="dropdown">
+                        <i class="bi bi-film ms-2"></i>فیلم</a>
+
+                     </li>
+                     <li class="nav-item  me-2">
+                        <a href="" class="nav-link ms-1 active mt-1 text-border nav-text" data-bs-toggle="dropdown">
+                        <i class="bi bi-tv-fill ms-2"></i>سریال</a>
+
+                     </li>
+                     <li class="nav-item  me-2">
+                        <a href="" class="nav-link ms-1 active mt-1 text-border nav-text" data-bs-toggle="dropdown">
+                        <i class="bi bi-house-fill ms-2 "></i>مستند</a>
+
+                     </li>
+                     <li class="nav-item nav-item me-2">
+                        <em>
+                        <a href="#" class="nav-link ms-1 mt-1 active nav-text">
+                        <i class="bi bi-file-person-fill  ms-2"></i>تماس با ما </a>
+                        </em>
+                     </li>
+                  </ul>
+               </div>
+               <div class="nav-icon d-flex ">
+                  <div class=""  id="searchbox">
+                     <button type="button" class="btn rounded-circle nav-text" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                     <i class="bi bi-search"></i>
+                     </button>
+                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                           <div class="modal-content">
+                              <div class="col-12 modal-header p-2 d-flex justify-content-between align-items-center">
+                                 <h4 class="col"> جستجو فیلم یا سریال.....</h4>
+                                 <button type="button" class="col-2 btn-close me-auto" data-bs-dismiss="modal" aria-label="Close"></button> 
+                              </div>
+                              <div class="modal-body">
+                                 <form class="mt-1 d-flex" role="search">
+                                    <input type="search" class="form-control border-dark bg-light mt-1 " placeholder="جستجو...... " >   
+                                    <button class="btn btn-outline-success border-dark mt-1 me-1" type="submit">جستجو</button>
+                                 </form>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <small><button onclick="change()" type="button" class="btn rounded-circle nav-text btn-toggle " ><i class="bi bi-moon-fill"></i></button></small>
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <!-- navbar-end -->
+
+      
+      <main class="container mt-5">
+         <div class="row gx-3">
+            <section class="col-12 col-lg-8">
+
+
+               <!-- slideshow-start -->
+               <div class="carousel slide carousel-fade col-12" id="pain" data-bs-ride="carousel">
+                  <div class="carousel-inner" style="border-radius: 10px;">
+                     <div class="carousel-item active" data-bs-interval="3000" data-bs-touch="false">
+                        <div class="carousel-image ">                              
+                           <img src="source/gallery/breaking_bad.jpg" alt="" class=" w-100 zoom-item ghost">
+                        </div>
+                        <div class="carousel-caption">
+                           <h2 class=" slide-text">دانلود سریال .....</h2>
+                           <h3 class=" slide-footer-text">از <a href="#" class="slide-link">اینجا</a> در سایت ......</h3>
+                        </div>
+                     </div>
+                     <div class="carousel-item " data-bs-interval="3000" data-bs-touch="false">
+                        <div class="carousel-image">
+                           <img src="source/gallery/Five-Nights-At-Freddys.jpg" alt="" class="d-block w-100 zoom-item ghost">
+                        </div>
+                        <div class="carousel-caption ">
+                           <h2 class="slide-text">دانلود سریال .....</h2>
+                           <h3 class="slide-footer-text">از <a href="#" class="slide-link"  >اینجا</a> در سایت ......</h3>
+                        </div>
+                     </div>
+                     <div class="carousel-item " data-bs-interval="3000" data-bs-touch="false">
+                        <div class="carousel-image">
+                           <img src="source/gallery/Chernobyl_1920x1080.webp" alt="" class="d-block w-100 zoom-item ghost">
+                        </div>
+                        <div class="carousel-caption ">
+                           <h2 class=" slide-text">دانلود سریال .....</h2>
+                           <h3 class=" slide-footer-text">از <a href="#" class="slide-link" >اینجا</a> در سایت ......</h3>
+                        </div>
+                     </div>
+                     <div class="carousel-item" data-bs-interval="3000" data-bs-touch="false">
+                        <div class="carousel-image">
+                           <img src="source/gallery/wallpapersden.com_disney-the-mandalorian-3_3840x2160.jpg" alt="" class="d-block w-100  zoom-item ghost">
+                        </div>
+                        <div class="carousel-caption">
+                           <h2 class=" slide-text">دانلود سریال .....</h2>
+                           <h3 class="slide-footer-text">از <a href="#" class="slide-link"  >اینجا</a> در سایت ......</h3>
+                        </div>
+                     </div>
+                     <div class="carousel-item" data-bs-interval="3000" data-bs-touch="false">
+                        <div class="carousel-image">
+                           <img src="source/gallery/rick-and-morty-portal-gun-hd-wallpaper-uhdpaper.com-928@0@e.jpg" alt="" class="d-block w-100  zoom-item ghost">
+                        </div>
+                        <div class="carousel-caption ">
+                           <h2 class=" slide-text">دانلود سریال .....</h2>
+                           <h3 class=" slide-footer-text">از <a href="#" class="slide-link"  >اینجا</a> در سایت ......</h3>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <button class="carousel-control-prev d-inline-block" type="button" data-bs-target="#pain" data-bs-slide="next">
+                        <i class="bi bi-caret-left-fill display-6"></i>
+                        </button>
+                        <button class="carousel-control-next d-inline-block " type="button" data-bs-target="#pain" data-bs-slide="prev">
+                        <i class="bi bi-caret-right-fill display-6"></i>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+               <!-- slideshow-end -->
+
+
+               <!-- card-section-start -->
+               <header class="d-flex justify-content-between mt-5 mb-4 align-items-center">
+                  <h2 class="d-inline-flex col " style="width: 90%;">سریال های روز دنیا</h2>
+               </header>
+               <div class="row col-12 col-lg-12 m-auto">
+                  <div class="card mb-3 col-12 p-2 shadow border" >
+                     <div class="row">
+                        <header class="mt-2 mb-3">
+                           <div class="row col-12 d-flex justify-content-center justify-content-lg-start">
+                              <h4 class="col-12 col-lg-6 header-text text-center mb-2">دانلود سریال Breaking Bad </h4>
+                              <p class="col-12 col-lg-6 text-center shadow rounded-pill header-pill px-4">زیرنویس فارسی</p>
+                           </div>
+                        </header>
+                        <div class="col-9 col-md-8 col-lg-4 m-auto p-0 p-lg-2" >
+                           <img src="source/gallery/breaking_bad_vertical.jpg" class="img-fluid card-img rounded-4 p-1" alt="breaking bad picture">
+                        </div>
+                        <div class="col-12 col-lg-8 mt-2">
+                           <div class="card-body p-0 m-0 g-0 gap-0 ">
+                              <div class="col-12 ">
+                                 <ul class="d-flex flex-wrap">
+                                    <li class="fm-infos">
+                                       <strong>ژانر</strong><i class="separator"></i>
+                                       <hr>
+                                       <div class="fm-info-body">     <a href="#" rel="tag">درام</a> , <a href="#" rel="tag">کمدی</a>   </div>
+                                    </li>
+                                    <li class="fm-infos">
+                                       <strong>وضعیت پخش</strong><i class="separator"></i>
+                                       <div class="fm-info-body">تمدید شده برای فصل چهارم</div>
+                                    </li>
+                                    <li class="fm-infos fm-info-link">
+                                       <strong>محصول</strong><i class="separator"></i>
+                                       <div class="fm-info-body"><a href="#" rel="tag">انگلستان</a></div>
+                                    </li>
+                                    <li class="fm-infos fm-info-link">
+                                       <strong >زبان</strong><i class="separator"></i>
+                                       <div class="fm-info-body"><a href="#">انگلیسی</a></div>
+                                    </li>
+                                    <li class="fm-infos ">
+                                       <strong>مدت زمان</strong><i class="separator"></i>
+                                       <div class="fm-info-body">45 دقیقه</div>
+                                    </li>
+                                    <li class="mt-4 p-2" style="text-align: justify;">
+                                       <h6 style="line-height: 27px;" class="text-end" >
+                                          افسارگسیخته داستان والتر وایت (برایان کرانستون) دانشمند شیمی زحمتکش و بی‌حاشیه که معلم یک دبیرستان است را به تصویر می‌کشد. وایت در ابتدای داستان متوجه می‌شود مبتلا به سرطان ریه است. او پیش از فرارسیدن مرگش، برای تأمین مالی خانواده‌اش به همراه دانش‌آموز پیشین خود، جسی پینکمن (آرون پال) شروع به تولید و پخش مت‌آمفتامین (شیشه) می‌کند اما رفته رفته به این کار آلوده شده و خود تبدیل به یکی از بزرگترین مافیای مواد مخدر در جنوب ایالات متحده می‌شود.                                
+                                       </h6>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <footer>
+                           <div class="row">
+                              <div class="col-11 m-auto">
+                                 <p class=" p-1 rounded d-flex align-self-center text card-footer-text" ><i class="bi bi-bell-fill ms-2"></i>قسمت .... فصل .... اضافه شد </p>
+                              </div>
+                           </div>
+                        </footer>
+                        <footer class="d-flex justify-content-center justify-content-md-end mt-4">
+                           <div class="row col-10 col-md-auto ms-md-2">
+                              <a class="btn rounded-3 main-button" href="#" role="button"><i class="bi bi-download ms-2"></i>مشاهده بیشتر</a>
+                           </div>
+                        </footer>
+                     </div>
+                  </div>
+                  <hr class="mb-4 mt-4 color-line">
+                  <div class="card mb-3 col-12 p-2 shadow border" >
+                     <div class="row">
+                        <div class="row col-12 d-flex justify-content-center justify-content-lg-start">
+                           <h4 class="col-12 col-lg-6 header-text text-center mb-2">دانلود سریال Game Of Thrones </h4>
+                           <p class="col-12 col-lg-6 text-center shadow rounded-pill header-pill px-4">زیرنویس فارسی</p>
+                        </div>
+                        <div class="col-9 col-md-8 col-lg-4 m-auto p-0 p-lg-2" >
+                           <img src="source/gallery/game-of-thrones-1451.jpg" class="img-fluid card-img rounded-4 p-1" alt="game of thrones picture">
+                        </div>
+                        <div class="col-12 col-lg-8 mt-2">
+                           <div class="card-body p-0 m-0 g-0 gap-0 ">
+                              <div class="col-12 ">
+                                 <ul class="d-flex flex-wrap">
+                                    <li class="fm-infos">
+                                       <strong>ژانر</strong><i class="separator"></i>
+                                       <hr>
+                                       <div class="fm-info-body">     <a href="#" rel="tag">درام</a> , <a href="#" rel="tag">کمدی</a>   </div>
+                                    </li>
+                                    <li class="fm-infos">
+                                       <strong>وضعیت پخش</strong><i class="separator"></i>
+                                       <div class="fm-info-body">تمدید شده برای فصل چهارم</div>
+                                    </li>
+                                    <li class="fm-infos fm-info-link">
+                                       <strong>محصول</strong><i class="separator"></i>
+                                       <div class="fm-info-body"><a href="#" rel="tag">انگلستان</a></div>
+                                    </li>
+                                    <li class="fm-infos fm-info-link">
+                                       <strong >زبان</strong><i class="separator"></i>
+                                       <div class="fm-info-body"><a href="#">انگلیسی</a></div>
+                                    </li>
+                                    <li class="fm-infos ">
+                                       <strong>مدت زمان</strong><i class="separator"></i>
+                                       <div class="fm-info-body">45 دقیقه</div>
+                                    </li>
+                                 </ul>
+                                 <h6 style="line-height: 27px;" class="text-end mt-4 p-2" >
+                                    هفت خاندان اشرافی برای حاکمیت بر سرزمین افسانه ای وستروس در حال ستیز هستند. خاندان استارک، لنیستر و باراثیون برجسته ترین این خاندان ها می باشند. داستان سریال گیم آف ترونز از جایی شروع می شود که رابرت باراثیون پادشاه وستروس، از دوست قدیمی خود لرد ادارد ارباب خاندان استارک، تقاضا می کند به عنوان مشاور پادشاه که....
+                                 </h6>
+                              </div>
+                           </div>
+                        </div>
+                        <footer>
+                           <div class="row">
+                              <div class="col-11 m-auto mt-3 ">
+                                 <a class=" p-1 rounded d-flex align-self-center card-footer-text" ><i class="bi bi-bell-fill ms-2"></i>قسمت .... فصل .... اضافه شد </a>
+                              </div>
+                           </div>
+                        </footer>
+                        <footer class="d-flex justify-content-center justify-content-md-end mt-4">
+                           <div class="row col-10 col-md-auto ms-md-2">
+                              <a class="btn rounded-3 main-button" href="#" role="button"><i class="bi bi-download ms-2"></i>مشاهده بیشتر</a>
+                           </div>
+                        </footer>
+                     </div>
+                  </div>
+                  <hr class="mb-4 mt-4 color-line">
+                  <div class="card mb-3 col-12 p-2 shadow border" >
+                     <div class="row">
+                        <div class="row col-12 d-flex justify-content-center justify-content-lg-start">
+                           <h4 class="col-12 col-lg-6 header-text text-center mb-2">دانلود سریال Chernobyl </h4>
+                           <p class="col-12 col-lg-6 text-center shadow rounded-pill header-pill px-4">زیرنویس فارسی</p>
+                        </div>
+                        <div class="col-9 col-md-8 col-lg-4 m-auto p-0 p-lg-2" >
+                           <img src="source/gallery/chernobyl-1527.jpg" class="img-fluid card-img rounded-4 p-1" alt="Chernobyl picture">
+                        </div>
+                        <div class="col-12 col-lg-8 mt-2">
+                           <div class="card-body p-0 m-0 g-0 gap-0 ">
+                              <div class="col-12 ">
+                                 <ul class="d-flex flex-wrap">
+                                    <li class="fm-infos">
+                                       <strong>ژانر</strong><i class="separator"></i>
+                                       <hr>
+                                       <div class="fm-info-body">     <a href="#" rel="tag">درام</a> , <a href="#" rel="tag">کمدی</a>   </div>
+                                    </li>
+                                    <li class="fm-infos">
+                                       <strong>وضعیت پخش</strong><i class="separator"></i>
+                                       <div class="fm-info-body">تمدید شده برای فصل چهارم</div>
+                                    </li>
+                                    <li class="fm-infos fm-info-link">
+                                       <strong>محصول</strong><i class="separator"></i>
+                                       <div class="fm-info-body"><a href="#" rel="tag">انگلستان</a></div>
+                                    </li>
+                                    <li class="fm-infos fm-info-link">
+                                       <strong >زبان</strong><i class="separator"></i>
+                                       <div class="fm-info-body"><a href="#">انگلیسی</a></div>
+                                    </li>
+                                    <li class="fm-infos ">
+                                       <strong>مدت زمان</strong><i class="separator"></i>
+                                       <div class="fm-info-body">45 دقیقه</div>
+                                    </li>
+                                    <li class="mt-4 p-2" style="text-align: justify;">
+                                       <h6 style="line-height: 24px;" class="text-end" >
+                                          چرنوبیل، ماجرای واقعی یکی از بزرگترین فجایع انسانی در تاریخ است و داستان شجاعت زنان و مردانی را روایت می‌کند که خود را قربانی کردند تا اروپا را از فاجعه نجات دهند. این سریال کوتاه بر روی فاجعه نیروگاه هسته‌ای چرنوبیل که در آوریل ۱۹۸۶ در اوکراین (شوروی) رخ داد متمرکز است و آشکار می‌سازد که چرا و چگونه این حادثه رخ داد و به پنهانکاری شوروی اشاره می‌کند.                                        
+                                       </h6>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <footer>
+                           <div class="row">
+                              <div class="col-11 m-auto mt-3 ">
+                                 <a class=" p-1 rounded d-flex align-self-center card-footer-text" ><i class="bi bi-bell-fill ms-2"></i>قسمت .... فصل .... اضافه شد </a>
+                              </div>
+                           </div>
+                        </footer>
+                        <footer class="d-flex justify-content-center justify-content-md-end mt-4">
+                           <div class="row col-10 col-md-auto ms-md-2">
+                              <a class="btn rounded-3 main-button" href="#" role="button"><i class="bi bi-download ms-2"></i>مشاهده بیشتر</a>
+                           </div>
+                        </footer>
+                     </div>
+                  </div>
+                  <hr class="mb-4 mt-4 color-line">
+                  <div class="card mb-3 col-12 p-2 shadow border" >
+                     <div class="row">
+                        <div class="row col-12 d-flex justify-content-center justify-content-lg-start">
+                           <h4 class="col-12 col-lg-6 header-text text-center mb-2">دانلود سریال Attack On Titan </h4>
+                           <p class="col-12 col-lg-6 text-center shadow rounded-pill header-pill px-4">زیرنویس فارسی</p>
+                        </div>
+                        <div class="col-9 col-md-8 col-lg-4 m-auto p-0 p-lg-2" >
+                           <img src="source/gallery/attack-on-titan-1317.jpg" class="img-fluid card-img rounded-4 p-1" alt="attack-on-titan picture">
+                        </div>
+                        <div class="col-12 col-lg-8 mt-2">
+                           <div class="card-body p-0 m-0 g-0 gap-0 ">
+                              <div class="col-12 ">
+                                 <ul class="d-flex flex-wrap">
+                                    <li class="fm-infos">
+                                       <strong>ژانر</strong><i class="separator"></i>
+                                       <hr>
+                                       <div class="fm-info-body">     <a href="#" rel="tag">درام</a> , <a href="#" rel="tag">کمدی</a>   </div>
+                                    </li>
+                                    <li class="fm-infos">
+                                       <strong>وضعیت پخش</strong><i class="separator"></i>
+                                       <div class="fm-info-body">تمدید شده برای فصل چهارم</div>
+                                    </li>
+                                    <li class="fm-infos fm-info-link">
+                                       <strong>محصول</strong><i class="separator"></i>
+                                       <div class="fm-info-body"><a href="#" rel="tag">انگلستان</a></div>
+                                    </li>
+                                    <li class="fm-infos fm-info-link">
+                                       <strong >زبان</strong><i class="separator"></i>
+                                       <div class="fm-info-body"><a href="#">انگلیسی</a></div>
+                                    </li>
+                                    <li class="fm-infos ">
+                                       <strong>مدت زمان</strong><i class="separator"></i>
+                                       <div class="fm-info-body">45 دقیقه</div>
+                                    </li>
+                                    <li class="mt-4 p-2" style="text-align: justify;">
+                                       <h6 style="line-height: 27px;" class="text-end" >
+                                          این انیمه داستان دنیایی آخرالزمانی را روایت میکند که بر اثر حادثه ای نامشخص پر از تایتان های (غول های) آدم خوار شده که هیکل های بزرگی دارند و هر انسانی را که ببینند شکار میکنند و میخورند. تنها انسان های باقیمانده در شهری با دیوارهای بلند زندگی میکنند که آن ها را از تایتان های آدم خوار پشت دیوار در امان نگه داشته است.                                        
+                                       </h6>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <footer>
+                           <div class="row">
+                              <div class="col-11 m-auto mt-3 ">
+                                 <a class=" p-1 rounded d-flex align-self-center card-footer-text" ><i class="bi bi-bell-fill ms-2"></i>قسمت .... فصل .... اضافه شد </a>
+                              </div>
+                           </div>
+                        </footer>
+                        <footer class="d-flex justify-content-center justify-content-md-end mt-4">
+                           <div class="row col-10 col-md-auto ms-md-2">
+                              <a class="btn rounded-3 main-button" href="#" role="button"><i class="bi bi-download ms-2"></i>مشاهده بیشتر</a>
+                           </div>
+                        </footer>
+                     </div>
+                  </div>
+                  <hr class="mb-4 mt-4 color-line">
+                  <div class="card mb-3 col-12 p-2 shadow border" >
+                     <div class="row">
+                        <div class="row col-12 d-flex justify-content-center justify-content-lg-start">
+                           <h4 class="col-12 col-lg-6 header-text text-center mb-2">دانلود سریال The Walking Dead </h4>
+                           <p class="col-12 col-lg-6 text-center shadow rounded-pill header-pill px-4">زیرنویس فارسی</p>
+                        </div>
+                        <div class="col-9 col-md-8 col-lg-4 m-auto p-0 p-lg-2" >
+                           <img src="source/gallery/the-walking-dead-dead-city-14522.jpg" class="img-fluid card-img rounded-4 p-1" alt="the-walking-dead picture">
+                        </div>
+                        <div class="col-12 col-lg-8 mt-2">
+                           <div class="card-body p-0 m-0 g-0 gap-0 ">
+                              <div class="col-12 ">
+                                 <ul class="d-flex flex-wrap">
+                                    <li class="fm-infos">
+                                       <strong>ژانر</strong><i class="separator"></i>
+                                       <hr>
+                                       <div class="fm-info-body">     <a href="#" rel="tag">درام</a> , <a href="#" rel="tag">کمدی</a>   </div>
+                                    </li>
+                                    <li class="fm-infos">
+                                       <strong>وضعیت پخش</strong><i class="separator"></i>
+                                       <div class="fm-info-body">تمدید شده برای فصل چهارم</div>
+                                    </li>
+                                    <li class="fm-infos fm-info-link">
+                                       <strong>محصول</strong><i class="separator"></i>
+                                       <div class="fm-info-body"><a href="#" rel="tag">انگلستان</a></div>
+                                    </li>
+                                    <li class="fm-infos fm-info-link">
+                                       <strong >زبان</strong><i class="separator"></i>
+                                       <div class="fm-info-body"><a href="#">انگلیسی</a></div>
+                                    </li>
+                                    <li class="fm-infos ">
+                                       <strong>مدت زمان</strong><i class="separator"></i>
+                                       <div class="fm-info-body">45 دقیقه</div>
+                                    </li>
+                                    <li class="mt-4 p-2" style="text-align: justify;">
+                                       <h6 style="line-height: 27px;" class="text-end" >
+                                          سریال مردگان متحرک: شهر مرده (The Walking Dead: Dead City) چهارمین اسپین آف سریال مردگان متحرک و به طور کلی پنجمین سری از فرنچایز مردگان متحرک است. داستان این سریال بر دو شخصیت مگی و نیگان تمرکز دارد که با همدیگر به شهر منهتن سفر میکنند تا هرشل پسر گمشده مگی را از دست شخصیت شروری که قبلا یکی از افراد گروه نیگان بوده نجات بدهند.                                       
+                                       </h6>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <footer>
+                           <div class="row">
+                              <div class="col-11 m-auto mt-3 ">
+                                 <a class=" p-1 rounded d-flex align-self-center card-footer-text" ><i class="bi bi-bell-fill ms-2"></i>قسمت .... فصل .... اضافه شد </a>
+                              </div>
+                           </div>
+                        </footer>
+                        <footer class="d-flex justify-content-center justify-content-md-end mt-4">
+                           <div class="row col-10 col-md-auto ms-md-2">
+                              <a class="btn rounded-3 main-button" href="#" role="button"><i class="bi bi-download ms-2"></i>مشاهده بیشتر</a>
+                           </div>
+                        </footer>
+                     </div>
+                  </div>
+                  <hr class="mb-4 mt-4 color-line">
+                  <div class="card mb-3 col-12 p-2 shadow border" >
+                     <div class="row">
+                        <div class="row col-12 d-flex justify-content-center justify-content-lg-start">
+                           <h4 class="col-12 col-lg-6 header-text text-center mb-2">دانلود سریال Friends </h4>
+                           <p class="col-12 col-lg-6 text-center shadow rounded-pill header-pill px-4">زیرنویس فارسی</p>
+                        </div>
+                        <div class="col-9 col-md-8 col-lg-4 m-auto p-0 p-lg-2" >
+                           <img src="source/gallery/friends-1517.jpg" class="img-fluid card-img rounded-4 p-1" alt="friends picture">
+                        </div>
+                        <div class="col-12 col-lg-8 mt-2">
+                           <div class="card-body p-0 m-0 g-0 gap-0 ">
+                              <div class="col-12 ">
+                                 <ul class="d-flex flex-wrap">
+                                    <li class="fm-infos">
+                                       <strong>ژانر</strong><i class="separator"></i>
+                                       <hr>
+                                       <div class="fm-info-body">     <a href="#" rel="tag">درام</a> , <a href="#" rel="tag">کمدی</a>   </div>
+                                    </li>
+                                    <li class="fm-infos">
+                                       <strong>وضعیت پخش</strong><i class="separator"></i>
+                                       <div class="fm-info-body">تمدید شده برای فصل چهارم</div>
+                                    </li>
+                                    <li class="fm-infos fm-info-link">
+                                       <strong>محصول</strong><i class="separator"></i>
+                                       <div class="fm-info-body"><a href="#" rel="tag">انگلستان</a></div>
+                                    </li>
+                                    <li class="fm-infos fm-info-link">
+                                       <strong >زبان</strong><i class="separator"></i>
+                                       <div class="fm-info-body"><a href="#">انگلیسی</a></div>
+                                    </li>
+                                    <li class="fm-infos ">
+                                       <strong>مدت زمان</strong><i class="separator"></i>
+                                       <div class="fm-info-body">45 دقیقه</div>
+                                    </li>
+                                    <li class="mt-4 p-2" style="text-align: justify;">
+                                       <h6 style="line-height: 27px;" class="text-end" >
+                                          دوستان یا فرندز (به انگلیسی: Friends) یک مجموعه کمدی موقعیت آمریکایی است که توسط دیوید کرین و مارتا کافمن ساخته شد و از ۲۲ سپتامبر ۱۹۹۴ تا ۶ مهٔ ۲۰۰۴ از شبکهٔ ان‌بی‌سی پخش گردید. این مجموعه دارای ده فصل است و هنوز در شبکه‌های مختلف در حال بازبخش می‌باشد. داستان آن دربارهٔ شش دوست است که در منهتن نیویورک زندگی می‌کنند                          
+                                       </h6>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <footer>
+                           <div class="row">
+                              <div class="col-11 m-auto mt-3 ">
+                                 <a class=" p-1 rounded d-flex align-self-center card-footer-text" ><i class="bi bi-bell-fill ms-2"></i>قسمت .... فصل .... اضافه شد </a>
+                              </div>
+                           </div>
+                        </footer>
+                        <footer class="d-flex justify-content-center justify-content-md-end mt-4">
+                           <div class="row col-10 col-md-auto ms-md-2">
+                              <a class="btn rounded-3 main-button" href="#" role="button"><i class="bi bi-download ms-2"></i>مشاهده بیشتر</a>
+                           </div>
+                        </footer>
+                     </div>
+                  </div>
+               </div>
+               <!-- card-section-end -->
+
+
+               <!-- arrow-start -->
+               <section class="col-12 m-auto">
+                  <div class="card mb-3 shadow border">
+                     <div class="pagination d-flex justify-content-center mt-4 mb-4 ">
+                        <h5><a href="#" class="arrow rounded-circle arrow">&laquo;</a></h5>
+                        <h5><a href="#" class="active rounded-circle arrow">1</a></h5>
+                        <h5><a href="#" class="rounded-circle arrow">2</a></h5>
+                        <h5><a href="#" class="rounded-circle arrow">3</a></h5>
+                        <h5><a href="#" class="rounded-circle arrow">4</a></h5>
+                        <h5><a href="#" class="rounded-circle arrow">5</a></h5>
+                        <h5><a href="#" class="rounded-circle arrow">6</a></h5>
+                        <h5><a href="#" class="arrow rounded-circle arrow">&raquo;</a></h5>
+                     </div>
+                  </div>
+               </section>
+               <!-- arrow-end -->
+            </section>
+
+
+            <aside class="col-12 col-lg-4 mx-auto">
+
+
+               <!-- aside-part1-start -->
+               <section class="col-12 mb-4  ">
+                  <div class="card border">
+                     <header class="d-flex  align-items-baseline">
+                        <div class="col mt-2 me-3">
+                           <h5 style="font-size: 16px;"><i class="bi bi-film ms-2" ></i>فیلم های 2023</h5>
+                           <h6 style="font-size: 12px;">جدیدترین فیلم های روز دنیا </h6>
+                        </div>
+                        <div class="cold-flex justify-content-end ms-2 h-100 ">
+                        </div>
+                     </header>
+                     <hr class="mb-2 mt-2 color-line col-11 m-auto">
+                     <section>
+                        <div class="row row-cols-3 g-2 p-4 h-100">
+                           <div class="col ">
+                              <div class="card">
+                                 <h4><img src="source/gallery/kaleidoscope-15058.jpg" class="card-img-top rounded aside-pic" alt="..."></h4>
+                              </div>
+                           </div>
+                           <div class="col ">
+                              <div class="card">
+                                 <h4><img src="source/gallery/friends-1517.jpg" class="card-img-top rounded aside-pic" alt="..."></h4>
+                              </div>
+                           </div>
+                           <div class="col ">
+                              <div class="card">
+                                 <h4><img src="source/gallery/chernobyl-1527.jpg" class="card-img-top rounded aside-pic " alt="..."></h4>
+                              </div>
+                           </div>
+                           <div class="col ">
+                              <div class="card">
+                                 <h4><img src="source/gallery/the-last-of-us-7.jpg" class="card-img-top rounded aside-pic" alt="..."></h4>
+                              </div>
+                           </div>
+                           <div class="col ">
+                              <div class="card">
+                                 <h4><img src="source/gallery/the-walking-dead-dead-city-14522.jpg" class="card-img-top rounded aside-pic" alt="..."></h4>
+                              </div>
+                           </div>
+                           <div class="col ">
+                              <div class="card">
+                                 <h4><img src="source/gallery/attack-on-titan-1317.jpg" class="card-img-top rounded aside-pic" alt="..."></h4>
+                              </div>
+                           </div>
+                        </div>
+                     </section>
+                  </div>
+               </section>
+               <!-- aside-part1-end -->
+
+
+               <!-- aside-part2-start -->
+               <section class="col-12 mb-4 ">
+                  <div class="card border">
+                     <header class="d-flex">
+                        <div class="col mt-2 me-3">
+                           <h5 style="font-size: 16px;"><i class="bi bi-film ms-2"   ></i> ژانرها </h5>
+                           <h6 style="font-size: 12px;">جدیدترین فیلم های روز دنیا </h6>
+                        </div>
+                     </header>
+                     <hr class="mb-2 mt-2 color-line col-11 m-auto">
+                     <div class="row row-cols-2 d-flex justify-content-between g-3 text-center mb-3 me-2 ms-2">
+                        <div class="col">
+                           <a href="#">
+                              <div class="card justify-content-center aside-link p-0">
+                                 <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                    <h5 class="aside-text mt-1">sport</h5>
+                                    <h6 class="aside-text mt-1">51</h6>
+                                 </section>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="col">
+                           <a href="#">
+                              <div class="card justify-content-center aside-link p-0">
+                                 <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                    <h5 class="aside-text mt-1">sport</h5>
+                                    <h6 class="aside-text mt-1">51</h6>
+                                 </section>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="col">
+                           <a href="#">
+                              <div class="card justify-content-center aside-link p-0">
+                                 <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                    <h5 class="aside-text mt-1">sport</h5>
+                                    <h6 class="aside-text mt-1">51</h6>
+                                 </section>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="col">
+                           <a href="#">
+                              <div class="card justify-content-center aside-link p-0">
+                                 <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                    <h5 class="aside-text mt-1">sport</h5>
+                                    <h6 class="aside-text mt-1">51</h6>
+                                 </section>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="col">
+                           <a href="#">
+                              <div class="card justify-content-center aside-link p-0">
+                                 <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                    <h5 class="aside-text mt-1">sport</h5>
+                                    <h6 class="aside-text mt-1">51</h6>
+                                 </section>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="col">
+                           <a href="#">
+                              <div class="card justify-content-center aside-link p-0">
+                                 <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                    <h5 class="aside-text mt-1">sport</h5>
+                                    <h6 class="aside-text mt-1">51</h6>
+                                 </section>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="col">
+                           <a href="#">
+                              <div class="card justify-content-center aside-link p-0">
+                                 <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                    <h5 class="aside-text mt-1">sport</h5>
+                                    <h6 class="aside-text mt-1">51</h6>
+                                 </section>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="col">
+                           <a href="#">
+                              <div class="card justify-content-center aside-link p-0">
+                                 <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                    <h5 class="aside-text mt-1">sport</h5>
+                                    <h6 class="aside-text mt-1">51</h6>
+                                 </section>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="col">
+                           <a href="#">
+                              <div class="card justify-content-center aside-link p-0">
+                                 <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                    <h5 class="aside-text mt-1">sport</h5>
+                                    <h6 class="aside-text mt-1">51</h6>
+                                 </section>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="col">
+                           <a href="#">
+                              <div class="card justify-content-center aside-link p-0">
+                                 <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                    <h5 class="aside-text mt-1">sport</h5>
+                                    <h6 class="aside-text mt-1">51</h6>
+                                 </section>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="col">
+                           <a href="#">
+                              <div class="card justify-content-center aside-link p-0">
+                                 <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                    <h5 class="aside-text mt-1">sport</h5>
+                                    <h6 class="aside-text mt-1">51</h6>
+                                 </section>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="col">
+                           <a href="#">
+                              <div class="card justify-content-center aside-link p-0">
+                                 <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                    <h5 class="aside-text mt-1">sport</h5>
+                                    <h6 class="aside-text mt-1">51</h6>
+                                 </section>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="col">
+                           <a href="#">
+                              <div class="card justify-content-center aside-link p-0">
+                                 <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                    <h5 class="aside-text mt-1">sport</h5>
+                                    <h6 class="aside-text mt-1">51</h6>
+                                 </section>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="col">
+                           <a href="#">
+                              <div class="card justify-content-center aside-link p-0">
+                                 <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                    <h5 class="aside-text mt-1">sport</h5>
+                                    <h6 class="aside-text mt-1">51</h6>
+                                 </section>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="col">
+                           <a href="#">
+                              <div class="card justify-content-center aside-link p-0">
+                                 <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                    <h5 class="aside-text mt-1">sport</h5>
+                                    <h6 class="aside-text mt-1">51</h6>
+                                 </section>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="col">
+                           <a href="#">
+                              <div class="card justify-content-center aside-link p-0">
+                                 <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                    <h5 class="aside-text mt-1">sport</h5>
+                                    <h6 class="aside-text mt-1">51</h6>
+                                 </section>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="col">
+                           <a href="#">
+                              <div class="card justify-content-center aside-link p-0">
+                                 <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                    <h5 class="aside-text mt-1">sport</h5>
+                                    <h6 class="aside-text mt-1">51</h6>
+                                 </section>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="col">
+                           <a href="#">
+                              <div class="card justify-content-center aside-link p-0">
+                                 <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                    <h5 class="aside-text mt-1">sport</h5>
+                                    <h6 class="aside-text mt-1">51</h6>
+                                 </section>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="col">
+                           <a href="#">
+                              <div class="card justify-content-center aside-link p-0">
+                                 <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                    <h5 class="aside-text mt-1">sport</h5>
+                                    <h6 class="aside-text mt-1">51</h6>
+                                 </section>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="col">
+                           <a href="#">
+                              <div class="card justify-content-center aside-link p-0">
+                                 <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                    <h5 class="aside-text mt-1">sport</h5>
+                                    <h6 class="aside-text mt-1">51</h6>
+                                 </section>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="col">
+                           <a href="#">
+                              <div class="card justify-content-center aside-link p-0">
+                                 <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                    <h5 class="aside-text mt-1">sport</h5>
+                                    <h6 class="aside-text mt-1">51</h6>
+                                 </section>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="col">
+                           <a href="#">
+                              <div class="card justify-content-center aside-link p-0">
+                                 <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                    <h5 class="aside-text mt-1">sport</h5>
+                                    <h6 class="aside-text mt-1">51</h6>
+                                 </section>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="col">
+                           <a href="#">
+                              <div class="card justify-content-center aside-link p-0">
+                                 <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                    <h5 class="aside-text mt-1">sport</h5>
+                                    <h6 class="aside-text mt-1">51</h6>
+                                 </section>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="col">
+                           <a href="#">
+                              <div class="card justify-content-center aside-link p-0">
+                                 <section class="d-flex justify-content-between me-3 ms-3 align-items-center ">
+                                    <h5 class="aside-text mt-1">sport</h5>
+                                    <h6 class="aside-text mt-1">51</h6>
+                                 </section>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <!-- aside-part2-end -->
+
+
+               <!-- aside-part3-start -->
+               <section class="col-12 g-5 mb-4 ">
+                  <div class="card border">
+                     <header class="d-flex  align-items-baseline mt-1 mb-2">
+                        <div class="col mt-3 me-3">
+                           <h6><i class="bi bi-graph-up-arrow ms-2"  style="font-size: 17px;"></i>پربازدید ترین فیلم و سریال ها</h6>
+                        </div>
+                     </header>
+                     <hr class="mb-2 mt-2 color-line col-11 m-auto">
+                     <div class="card">
+                        <div class="row row-cols-1  g-3 text-center mb-3 me-2 ms-2">
+                           <div class="col">
+                              <a href="#">
+                                 <div class="card p-0">
+                                    <section class="d-flex align-items-center me-3 ms-3">
+                                       <div class="col-4"><img src="source/gallery/game-of-thrones-1451.jpg" class=" rounded aside-pic card-img"  alt="..."></div>
+                                       <div class=" row col me-1" >
+                                          <div class="col-12 d-flex justify-content-start">
+                                             <h6>دانلود سریال Game Of Thrones </h6>
+                                          </div>
+                                          <div class="col-12 d-flex justify-content-start ">
+                                             <i class="bi bi-star-fill text-warning ms-1 me-2"></i> 
+                                             <h6>8.5</h6>
+                                          </div>
+                                       </div>
+                                    </section>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="col">
+                              <a href="#">
+                                 <div class="card p-0">
+                                    <section class="d-flex align-items-center me-3 ms-3">
+                                       <div class="col-4"><img src="source/gallery/kaleidoscope-15058.jpg" class=" rounded aside-pic card-img" alt="..."></div>
+                                       <div class=" row col me-1" >
+                                          <div class="col-12 d-flex justify-content-start" style="font-size: 2vw;">
+                                             <h6>دانلود سریال kaleidoscope </h6>
+                                          </div>
+                                          <div class="col-12 d-flex justify-content-start ">
+                                             <i class="bi bi-star-fill text-warning ms-1 me-2"></i> 
+                                             <h6>8.5</h6>
+                                          </div>
+                                       </div>
+                                    </section>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="col">
+                              <a href="#">
+                                 <div class="card  p-0">
+                                    <section class="d-flex align-items-center me-3 ms-3">
+                                       <div class="col-4"><img src="source/gallery/the-walking-dead-dead-city-14522.jpg" class=" rounded aside-pic card-img" alt="..."></div>
+                                       <div class=" row col me-1" >
+                                          <div class="col-12 d-flex justify-content-start">
+                                             <h6>دانلود سریال Walking Dead </h6>
+                                          </div>
+                                          <div class="col-12 d-flex justify-content-start ">
+                                             <i class="bi bi-star-fill text-warning ms-1 me-2"></i> 
+                                             <h6>8.5</h6>
+                                          </div>
+                                       </div>
+                                    </section>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="col">
+                              <a href="#">
+                                 <div class="card  p-0">
+                                    <section class="d-flex align-items-center me-3 ms-3 justify-content-between">
+                                       <div class="col-4"><img src="source/gallery/the-last-of-us-7.jpg" class=" rounded aside-pic card-img" alt="..."></div>
+                                       <div class=" row col me-1" >
+                                          <div class="col-12 d-flex justify-content-start">
+                                             <h6>دانلود سریال The last of us </h6>
+                                          </div>
+                                          <div class="col-12 d-flex justify-content-start ">
+                                             <i class="bi bi-star-fill text-warning ms-1 me-2"></i> 
+                                             <h6>8.5</h6>
+                                          </div>
+                                       </div>
+                                    </section>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="col">
+                              <a href="#">
+                                 <div class="card  p-0">
+                                    <section class="d-flex align-items-center me-3 ms-3">
+                                       <div class="col-4"><img src="source/gallery/friends-1517.jpg" class=" rounded aside-pic card-img" alt="..."></div>
+                                       <div class=" row col me-1" >
+                                          <div class="col-12 d-flex justify-content-start">
+                                             <h6>دانلود سریال Friends </h6>
+                                          </div>
+                                          <div class="col-12 d-flex justify-content-start ">
+                                             <i class="bi bi-star-fill text-warning ms-1 me-2"></i> 
+                                             <h6>8.5</h6>
+                                          </div>
+                                       </div>
+                                    </section>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="col">
+                              <a href="#">
+                                 <div class="card">
+                                    <section class="d-flex align-items-center me-3 ms-3">
+                                       <div class="col-4"><img src="source/gallery/attack-on-titan-1317.jpg" class=" rounded aside-pic card-img" alt="..."></div>
+                                       <div class=" row col me-1" >
+                                          <div class="col-12 d-flex justify-content-start">
+                                             <h6>دانلود سریال Attack On Titan </h6>
+                                          </div>
+                                          <div class="col-12 d-flex justify-content-start ">
+                                             <i class="bi bi-star-fill text-warning ms-1 me-2"></i> 
+                                             <h6>8.5</h6>
+                                          </div>
+                                       </div>
+                                    </section>
+                                 </div>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <!-- aside-part3-end -->
+
+            </aside>
+
+         </div>
+      </main>
+
+
+      <!-- toast-start -->
+      <section>
+         <a href="#" class="btn btn-success back-to-top position-fixed bottom-0 start-0 ">
+         <i class="bi bi-chevron-double-up h5" style="width: 50px; height: 50px;"></i> 
+         </a>
+         <div class="toast-container position-fixed  bottom-0 p-3"  style="margin-top: 55px;">
+            <div data-aos="fade-down-right">
+               <div class="toast show shadow" role="alert" aria-live="assertive" aria-atomic="true" data-bs-dismiss="toast">
+                  <div class="toast-header">
+                     <img src="source/gallery/brand-1.png" class="rounded me-2 " alt="..." style="height: 40px; width: 45px;">
+                     <h6 class=" me-4"><em>مدیریت سایت</em></h6>
+                     <small class="me-2">5 ثانیه قبل</small>
+                     <button type="button" class="btn-close me-2" data-bs-dismiss="toast" aria-label="Close"></button>
+                  </div>
+                  <h6 class="toast-body">به سایت ما خوش اومدی اگه مشکلی بود<a href="#" class="me-1 ms-1">از اینجا</a>بهمون خبر بده</h6>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- toast-end -->
+
+
+      <!-- footer-start -->
+      <footer>
+         <div class="container-fluid shadow-lg" >
+            <div class="row d-flex justify-content-evenly">
+               <div class="col-11 col-lg-4 me-3 mt-4">
+                  <div class="row">
+                     <div class="col-6 me-auto">
+                        <h5>
+                           دسترسی سریع
+                        </h5>
+                     </div>
+                     <div class="col-6 ms-auto">
+                        <h5>
+                           Quick Access
+                        </h5>
+                     </div>
+                  </div>
+                  <div class="row mt-4 mb-2">
+                     <div class="col-6">
+                        <h6>
+                           <a href="#" class="nav-link"  onclick="topFunction()">صفحه نخست</a>
+                        </h6>
+                     </div>
+                  </div>
+                  <hr class="col-12">
+                  <div class="row mt-2 mb-2">
+                     <div class="col-6">
+                        <h6>
+                           <a href="#" class="nav-link">بلاگ</a>
+                        </h6>
+                     </div>
+                  </div>
+                  <hr class="col-12">
+                  <div class="row mt-2 mb-2">
+                     <div class="col-6">
+                        <h6>
+                           <a href="#" class="nav-link">پنل کاربری</a>
+                        </h6>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-12 mt-4 col-lg-5 ">
+                  <div class="row p-3">
+                     <div class="col-12">
+                        <h5>
+                           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+                        </h5>
+                        <section class="social-media border border-dark rounded mt-5 m-auto col-md-12  ">
+                           <h5 class="mt-3 m-auto me-2 d-flex justify-content-center">
+                              رسانه اینترنتی ......... در شبکه های اجتماعی
+                           </h5>
+                           <p class="d-flex justify-content-center p-2 ">
+                              <a href="#" class="text-decoration-none main-bi h1"><i class="bi bi-twitter ms-2 me-2 "></i> </a>
+                              <a href="#" class="text-decoration-none main-bi h1"><i class="bi bi-pinterest ms-2 me-2 "></i> </a>
+                              <a href="#" class="text-decoration-none main-bi h1"><i class="bi bi-discord ms-2 me-2 "></i> </a>
+                              <a href="#" class="text-decoration-none main-bi h1"><i class="bi bi-instagram ms-2 me-2"></i> </a>
+                              <a href="#" class="text-decoration-none main-bi h2"><i class="bi bi-telegram ms-2 me-2 "></i> </a>
+                           </p>
+                        </section>
+                     </div>
+                  </div>
+               </div>
+               <div class="col col-lg-2 d-flex justify-content-center justify-content-lg-end ms-3 mt-4 align-items-center ">
+                  <img src="source/gallery/brand-1.png" alt="" style="height: 5rem; width: 5rem;" class=" mt-4 mb-4">
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- footer-end -->
+
+
+      <script src="source/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="source/scripts/index.js"></script>
+   </body>
+</html>
