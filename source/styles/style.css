@@ -10,16 +10,17 @@
 	src: url(../Fonts/Persian/WebYekan/WebYekan.woff) format(".woff");
 }
 
-.dark-theme {
-	transition: all 0.5s;
+	.dark-theme{
+	 transition: all 0.5s;
 	background-color: #2B2D31;
-	color: ghostwhite !important;
-
-	.card {
-		background-color: #313338;
+	color: ghostwhite !important; 
 	}
 
-	.slide-text,
+	.card-dark{
+		background-color: #313338 !important;
+	}
+
+	/* .slide-text,
 	.slide-footer-text {
 		color: rgb(255, 255, 255);
 	}
@@ -50,9 +51,7 @@
 	}
 	.nav-text:hover{
 		text-shadow: 1px 1px 1px ghostwhite;
-	}
-
-}
+	} */
 
 
 body {

@@ -17,7 +17,7 @@
 
       <!-- navbar-start -->
       <header>
-         <nav class="navbar navbar-expand-lg shadow col-12 color-dark">
+         <nav class="navbar navbar-expand-lg shadow col-12 color-dark" id="navv" >
             <div class="container">
                <a href="index.html" class=" nav-link col-12 col-lg-1 d-flex justify-content-center" >
                   <div class="navbar-brand active">
@@ -79,7 +79,7 @@
                            </div>
                         </div>
                      </div>
-                     <small><button onclick="change()" type="button" class="btn rounded-circle nav-text btn-toggle " ><i class="bi bi-moon-fill"></i></button></small>
+                    <button type="button" class="btn rounded-circle nav-text btn-toggle" id="dark-mode"><i class="bi bi-moon-fill"></i></button>
                   </div>
                </div>
             </div>
@@ -159,7 +159,7 @@
                   <h2 class="d-inline-flex col " style="width: 90%;">سریال های روز دنیا</h2>
                </header>
                <div class="row col-12 col-lg-12 m-auto">
-                  <div class="card mb-3 col-12 p-2 shadow border" >
+                  <div class="card mb-3 col-12 p-2 shadow border" id="dark_card"  >
                      <div class="row">
                         <header class="mt-2 mb-3">
                            <div class="row col-12 d-flex justify-content-center justify-content-lg-start">
@@ -219,7 +219,7 @@
                      </div>
                   </div>
                   <hr class="mb-4 mt-4 color-line">
-                  <div class="card mb-3 col-12 p-2 shadow border" >
+                  <div class="card mb-3 col-12 p-2 shadow border" id="dark_card" >
                      <div class="row">
                         <div class="row col-12 d-flex justify-content-center justify-content-lg-start">
                            <h4 class="col-12 col-lg-6 header-text text-center mb-2">دانلود سریال Game Of Thrones </h4>
@@ -275,7 +275,7 @@
                      </div>
                   </div>
                   <hr class="mb-4 mt-4 color-line">
-                  <div class="card mb-3 col-12 p-2 shadow border" >
+                  <div class="card mb-3 col-12 p-2 shadow border" id="dark_card" >
                      <div class="row">
                         <div class="row col-12 d-flex justify-content-center justify-content-lg-start">
                            <h4 class="col-12 col-lg-6 header-text text-center mb-2">دانلود سریال Chernobyl </h4>
@@ -333,7 +333,7 @@
                      </div>
                   </div>
                   <hr class="mb-4 mt-4 color-line">
-                  <div class="card mb-3 col-12 p-2 shadow border" >
+                  <div class="card mb-3 col-12 p-2 shadow border" id="dark_card" >
                      <div class="row">
                         <div class="row col-12 d-flex justify-content-center justify-content-lg-start">
                            <h4 class="col-12 col-lg-6 header-text text-center mb-2">دانلود سریال Attack On Titan </h4>
@@ -391,7 +391,7 @@
                      </div>
                   </div>
                   <hr class="mb-4 mt-4 color-line">
-                  <div class="card mb-3 col-12 p-2 shadow border" >
+                  <div class="card mb-3 col-12 p-2 shadow border" id="dark_card" >
                      <div class="row">
                         <div class="row col-12 d-flex justify-content-center justify-content-lg-start">
                            <h4 class="col-12 col-lg-6 header-text text-center mb-2">دانلود سریال The Walking Dead </h4>
@@ -449,7 +449,7 @@
                      </div>
                   </div>
                   <hr class="mb-4 mt-4 color-line">
-                  <div class="card mb-3 col-12 p-2 shadow border" >
+                  <div class="card mb-3 col-12 p-2 shadow border" id="dark_card" >
                      <div class="row">
                         <div class="row col-12 d-flex justify-content-center justify-content-lg-start">
                            <h4 class="col-12 col-lg-6 header-text text-center mb-2">دانلود سریال Friends </h4>
@@ -534,7 +534,7 @@
 
                <!-- aside-part1-start -->
                <section class="col-12 mb-4  ">
-                  <div class="card border">
+                  <div class="card border" >
                      <header class="d-flex  align-items-baseline">
                         <div class="col mt-2 me-3">
                            <h5 style="font-size: 16px;"><i class="bi bi-film ms-2" ></i>فیلم های 2023</h5>
@@ -585,7 +585,7 @@
 
                <!-- aside-part2-start -->
                <section class="col-12 mb-4 ">
-                  <div class="card border">
+                  <div class="card border" >
                      <header class="d-flex">
                         <div class="col mt-2 me-3">
                            <h5 style="font-size: 16px;"><i class="bi bi-film ms-2"   ></i> ژانرها </h5>
@@ -842,7 +842,7 @@
 
                <!-- aside-part3-start -->
                <section class="col-12 g-5 mb-4 ">
-                  <div class="card border">
+                  <div class="card border" >
                      <header class="d-flex  align-items-baseline mt-1 mb-2">
                         <div class="col mt-3 me-3">
                            <h6><i class="bi bi-graph-up-arrow ms-2"  style="font-size: 17px;"></i>پربازدید ترین فیلم و سریال ها</h6>
