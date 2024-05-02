@@ -1,1 +1,35 @@
-AOS.init();const dark_mode=document.getElementById("dark-mode");dark_mode.addEventListener("click",()=>{document.body.classList.toggle("dark-theme");const t=document.getElementsByClassName("carousel-caption"),e=document.getElementsByClassName("card"),s=document.getElementsByClassName("aside-link"),a=document.getElementsByClassName("fm-infos"),l=document.getElementsByClassName("card-footer-text");document.getElementById("pagination").classList.toggle("dark-pagination");for(let t=0;t<e.length;t++)e[t].classList.toggle("card-dark");for(let e=0;e<t.length;e++)t[e].classList.toggle("text-light");for(let t=0;t<s.length;t++)s[t].classList.toggle("dark-aside-link");for(let t=0;t<a.length;t++)a[t].classList.toggle("dark-fm-infos");for(let t=0;t<l.length;t++)l[t].classList.toggle("dark-card-footer-text");"dark"==document.documentElement.getAttribute("data-bs-theme")?document.documentElement.setAttribute("data-bs-theme","light"):document.documentElement.setAttribute("data-bs-theme","dark")});
+AOS.init();
+const dark_mode = document.getElementById("dark-mode")
+dark_mode.addEventListener("click", () => {
+    document.body.classList.toggle("dark-theme")
+    const dark_slide_text=document.getElementsByClassName("carousel-caption")
+    const dark_card = document.getElementsByClassName("card")
+    const dark_aside_link=document.getElementsByClassName("aside-link")
+    const dark_card_info=document.getElementsByClassName("fm-infos")
+    const dark_footer_text=document.getElementsByClassName("card-footer-text")
+    const Dark_pagination=document.getElementById("pagination").classList.toggle("dark-pagination")
+
+   for (let i = 0; i < dark_card.length; i++) {
+      dark_card[i].classList.toggle("card-dark")
+   }
+   for (let i = 0; i < dark_slide_text.length; i++) {
+    dark_slide_text[i].classList.toggle("text-light")
+ }
+
+ for (let i = 0; i < dark_aside_link.length; i++) {
+    dark_aside_link[i].classList.toggle("dark-aside-link")
+ }
+ for (let i = 0; i < dark_card_info.length; i++) {
+    dark_card_info[i].classList.toggle("dark-fm-infos")
+ }
+ for (let i = 0; i < dark_footer_text.length; i++) {
+    dark_footer_text[i].classList.toggle("dark-card-footer-text")
+ }
+
+
+   if (document.documentElement.getAttribute('data-bs-theme') == 'dark') {
+      document.documentElement.setAttribute('data-bs-theme', 'light')
+   } else {
+      document.documentElement.setAttribute('data-bs-theme', 'dark')
+   }
+})
