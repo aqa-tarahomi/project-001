@@ -1,9 +1,29 @@
 
-:root{
-    --main-green-background:#5865F2;
-    --main-lite-background:#f8f9fa;
+[data-bs-theme="light"] {
+    --main-blue-bg:#5865F2;
     --main-transition: all 0.2s;
     --text-shadow: 3px 3px 4px #000000 ;
     --border-radius:14px;
-    --main-blue-background:#cfe2ff;
+    --body-bg:#f2f3f5;
+    --card-bg:#f7f7f7;
+    --card-info-bg:#d7f0ff;
+    --card-info-font:#000000;
+    --aside-border: solid 2px #9ec5fe;
+    --aside-hover:#11305f;
+    --nav-text-shadow:2px 2px 2px rgb(92, 92, 92);
+}
+
+[data-bs-theme="dark"] {
+
+    --main-blue-bg:#5865F2;
+    --main-transition: all 0.2s;
+    --text-shadow: 3px 3px 4px #000000 ;
+    --border-radius:14px;
+    --body-bg:#2B2D31;
+    --card-bg:#313338;
+    --card-info-bg:#262b2e;
+    --card-info-font:#ffffff;
+    --aside-border:solid 2px #99AAb5 ;
+    --aside-hover:#262c30 ;
+    --nav-text-shadow:2px 2px 2px rgb(214, 214, 214);
 }
