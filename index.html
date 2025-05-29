@@ -5,6 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>صفحه نخست</title>
       <link rel="icon" href="source/gallery/brand-1.png">
+          <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="source/bootstrap-5.3.2-dist/css/bootstrap.min.css">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -16,18 +17,18 @@
 
       <!-- navbar-start -->
       <header>
-         <nav class="navbar navbar-expand-lg shadow col-12 color-dark">
+         <nav class="navbar navbar-expand-lg shadow col-12 color-dark d-flex align-items-center">
             <div class="container">
                <a href="index.html" class=" nav-link col-12 col-lg-1 d-flex justify-content-center" >
-                  <div class="navbar-brand active">
-                     <img src="source/gallery/brand-1.png" alt="" style="height: 2.4rem; width: 2.4rem;" class="img-fluid m-auto ">
+                  <div class="navbar-brand">
+                     <img src="source/gallery/brand-1.png" alt="" style="height: 2.4rem; width: 2.4rem;" class="img-fluid">
                   </div>
                </a>
-               <button class="navbar-toggler border-1 ms-3 mt-auto" type="button" style=" color: green;" data-bs-toggle="offcanvas" data-bs-target="#navv" aria-controls="navv">
+               <button class="navbar-toggler border-1 ms-3" type="button" style=" color: green;" data-bs-toggle="offcanvas" data-bs-target="#navv" aria-controls="navv">
                <span class="navbar-toggler-icon"></span>
                </button>
-               <div class="offcanvas offcanvas-end" id="navv" data-bs-backdrop="true" data-bs-scroll="true" tabindex="-1" style="width: 270px;">
-                  <div class="d-lg-none mt-3">
+               <div class="offcanvas offcanvas-end mt-1" id="navv" data-bs-backdrop="true" data-bs-scroll="true" tabindex="-1" style="width: 270px;">
+                  <div class="d-lg-none">
                      <div class="row d-flex justify-content-between align-items-center ms-3">
                         <img src="source/gallery/brand-1.png" class=" col-3 me-2" alt="">
                         <button type="button" class="btn-close d-lg-none col-9 me-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button> 
@@ -35,33 +36,30 @@
                   </div>
                   <ul class="navbar-nav ">
                      <li class="nav-item  me-2">
-                        <a href="#" class="nav-link ms-1 active mt-1 text-border nav-text" data-bs-toggle="dropdown">
+                        <a href="#" class="nav-link ms-1 active text-border nav-text" data-bs-toggle="dropdown">
                         <i class="bi bi-film ms-2"></i>فیلم</a>
 
                      </li>
                      <li class="nav-item  me-2">
-                        <a href="" class="nav-link ms-1 active mt-1 text-border nav-text" data-bs-toggle="dropdown">
+                        <a href="" class="nav-link ms-1  text-border nav-text" data-bs-toggle="dropdown">
                         <i class="bi bi-tv-fill ms-2"></i>سریال</a>
 
                      </li>
                      <li class="nav-item  me-2">
-                        <a href="" class="nav-link ms-1 active mt-1 text-border nav-text" data-bs-toggle="dropdown">
+                        <a href="" class="nav-link ms-1 text-border nav-text" data-bs-toggle="dropdown">
                         <i class="bi bi-house-fill ms-2 "></i>مستند</a>
 
                      </li>
                      <li class="nav-item nav-item me-2">
                         <em>
-                        <a href="#" class="nav-link ms-1 mt-1 active nav-text">
+                        <a href="#" class="nav-link ms-1 nav-text">
                         <i class="bi bi-file-person-fill  ms-2"></i>تماس با ما </a>
                         </em>
                      </li>
                   </ul>
                </div>
-               <div class="nav-icon d-flex ">
-                  <div class=""  id="searchbox">
-                     <button type="button" class="btn rounded-circle nav-text" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                     <i class="bi bi-search"></i>
-                     </button>
+                  <div class="nav-icon d-flex mb-1"  id="searchbox" >
+                     <button type="button" class="btn nav-text" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-search"></i></button>
                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
                         <div class="modal-dialog">
                            <div class="modal-content">
@@ -78,9 +76,8 @@
                            </div>
                         </div>
                      </div>
-                    <button type="button" class="btn rounded-circle nav-text btn-toggle" id="dark-mode"><i class="bi bi-moon-fill"></i></button>
+                    <button type="button" class="btn nav-text dark-mode-switch" id="dark-mode"><i class="bi bi-moon-fill" id="dark-mode-icon" ></i></button>
                   </div>
-               </div>
             </div>
          </nav>
       </header>
@@ -158,304 +155,16 @@
                   <h2 class="d-inline-flex col " style="width: 90%;">سریال های روز دنیا</h2>
                </header>
                <div class="row col-12 col-lg-12 m-auto">
-                  <div class="card mb-3 col-12 p-2 shadow border" id="dark_card"  >
-                     <div class="row">
-                        <header class="mt-2 mb-3">
-                           <div class="row col-12 d-flex justify-content-center justify-content-lg-start">
-                              <h4 class="col-12 col-lg-6 header-text text-center mb-2">دانلود سریال Breaking Bad </h4>
-                              <p class="col-12 col-lg-6 text-center shadow rounded-pill header-pill px-4">زیرنویس فارسی</p>
-                           </div>
-                        </header>
-                        <div class="col-9 col-md-8 col-lg-4 m-auto p-0 p-lg-2" >
-                           <img src="source/gallery/breaking_bad_vertical.jpg" class="img-fluid card-img rounded-4 p-1" alt="breaking bad picture">
-                        </div>
-                        <div class="col-12 col-lg-8 mt-2">
-                           <div class="card-body p-0 m-0 g-0 gap-0 ">
-                              <div class="col-12 ">
-                                 <ul class="d-flex flex-wrap">
-                                    <li class="fm-infos">
-                                       <strong>ژانر</strong><i class="separator"></i>
-                                       <hr>
-                                       <div class="fm-info-body">     <a href="#" rel="tag">درام</a> , <a href="#" rel="tag">کمدی</a>   </div>
-                                    </li>
-                                    <li class="fm-infos">
-                                       <strong>وضعیت پخش</strong><i class="separator"></i>
-                                       <div class="fm-info-body">تمدید شده برای فصل چهارم</div>
-                                    </li>
-                                    <li class="fm-infos fm-info-link">
-                                       <strong>محصول</strong><i class="separator"></i>
-                                       <div class="fm-info-body"><a href="#" rel="tag">انگلستان</a></div>
-                                    </li>
-                                    <li class="fm-infos fm-info-link">
-                                       <strong >زبان</strong><i class="separator"></i>
-                                       <div class="fm-info-body"><a href="#">انگلیسی</a></div>
-                                    </li>
-                                    <li class="fm-infos ">
-                                       <strong>مدت زمان</strong><i class="separator"></i>
-                                       <div class="fm-info-body">45 دقیقه</div>
-                                    </li>
-                                    <li class="mt-4 p-2" style="text-align: justify;">
-                                       <h6 style="line-height: 27px;" class="text-end" >
-                                          افسارگسیخته داستان والتر وایت (برایان کرانستون) دانشمند شیمی زحمتکش و بی‌حاشیه که معلم یک دبیرستان است را به تصویر می‌کشد. وایت در ابتدای داستان متوجه می‌شود مبتلا به سرطان ریه است. او پیش از فرارسیدن مرگش، برای تأمین مالی خانواده‌اش به همراه دانش‌آموز پیشین خود، جسی پینکمن (آرون پال) شروع به تولید و پخش مت‌آمفتامین (شیشه) می‌کند اما رفته رفته به این کار آلوده شده و خود تبدیل به یکی از بزرگترین مافیای مواد مخدر در جنوب ایالات متحده می‌شود.                                
-                                       </h6>
-                                    </li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                        <footer>
-                           <div class="row">
-                              <div class="col-11 m-auto">
-                                 <p class=" p-1 rounded d-flex align-self-center text card-footer-text" ><i class="bi bi-bell-fill ms-2"></i>قسمت .... فصل .... اضافه شد </p>
-                              </div>
-                           </div>
-                        </footer>
-                        <footer class="d-flex justify-content-center justify-content-md-end mt-4">
-                           <div class="row col-10 col-md-auto ms-md-2">
-                              <a class="btn rounded-3 main-button" href="#" role="button"><i class="bi bi-download ms-2"></i>مشاهده بیشتر</a>
-                           </div>
-                        </footer>
-                     </div>
-                  </div>
-                  <hr class="mb-4 mt-4 color-line">
-                  <div class="card mb-3 col-12 p-2 shadow border" id="dark_card" >
-                     <div class="row">
-                        <div class="row col-12 d-flex justify-content-center justify-content-lg-start">
-                           <h4 class="col-12 col-lg-6 header-text text-center mb-2">دانلود سریال Game Of Thrones </h4>
-                           <p class="col-12 col-lg-6 text-center shadow rounded-pill header-pill px-4">زیرنویس فارسی</p>
-                        </div>
-                        <div class="col-9 col-md-8 col-lg-4 m-auto p-0 p-lg-2" >
-                           <img src="source/gallery/game-of-thrones-1451.jpg" class="img-fluid card-img rounded-4 p-1" alt="game of thrones picture">
-                        </div>
-                        <div class="col-12 col-lg-8 mt-2">
-                           <div class="card-body p-0 m-0 g-0 gap-0 ">
-                              <div class="col-12 ">
-                                 <ul class="d-flex flex-wrap">
-                                    <li class="fm-infos">
-                                       <strong>ژانر</strong><i class="separator"></i>
-                                       <hr>
-                                       <div class="fm-info-body">     <a href="#" rel="tag">درام</a> , <a href="#" rel="tag">کمدی</a>   </div>
-                                    </li>
-                                    <li class="fm-infos">
-                                       <strong>وضعیت پخش</strong><i class="separator"></i>
-                                       <div class="fm-info-body">تمدید شده برای فصل چهارم</div>
-                                    </li>
-                                    <li class="fm-infos fm-info-link">
-                                       <strong>محصول</strong><i class="separator"></i>
-                                       <div class="fm-info-body"><a href="#" rel="tag">انگلستان</a></div>
-                                    </li>
-                                    <li class="fm-infos fm-info-link">
-                                       <strong >زبان</strong><i class="separator"></i>
-                                       <div class="fm-info-body"><a href="#">انگلیسی</a></div>
-                                    </li>
-                                    <li class="fm-infos ">
-                                       <strong>مدت زمان</strong><i class="separator"></i>
-                                       <div class="fm-info-body">45 دقیقه</div>
-                                    </li>
-                                 </ul>
-                                 <h6 style="line-height: 27px;" class="text-end mt-4 p-2" >
-                                    هفت خاندان اشرافی برای حاکمیت بر سرزمین افسانه ای وستروس در حال ستیز هستند. خاندان استارک، لنیستر و باراثیون برجسته ترین این خاندان ها می باشند. داستان سریال گیم آف ترونز از جایی شروع می شود که رابرت باراثیون پادشاه وستروس، از دوست قدیمی خود لرد ادارد ارباب خاندان استارک، تقاضا می کند به عنوان مشاور پادشاه که....
-                                 </h6>
-                              </div>
-                           </div>
-                        </div>
-                        <footer>
-                           <div class="row">
-                              <div class="col-11 m-auto mt-3 ">
-                                 <a class=" p-1 rounded d-flex align-self-center card-footer-text" ><i class="bi bi-bell-fill ms-2"></i>قسمت .... فصل .... اضافه شد </a>
-                              </div>
-                           </div>
-                        </footer>
-                        <footer class="d-flex justify-content-center justify-content-md-end mt-4">
-                           <div class="row col-10 col-md-auto ms-md-2">
-                              <a class="btn rounded-3 main-button" href="#" role="button"><i class="bi bi-download ms-2"></i>مشاهده بیشتر</a>
-                           </div>
-                        </footer>
-                     </div>
-                  </div>
-                  <hr class="mb-4 mt-4 color-line">
-                  <div class="card mb-3 col-12 p-2 shadow border" id="dark_card" >
-                     <div class="row">
-                        <div class="row col-12 d-flex justify-content-center justify-content-lg-start">
-                           <h4 class="col-12 col-lg-6 header-text text-center mb-2">دانلود سریال Chernobyl </h4>
-                           <p class="col-12 col-lg-6 text-center shadow rounded-pill header-pill px-4">زیرنویس فارسی</p>
-                        </div>
-                        <div class="col-9 col-md-8 col-lg-4 m-auto p-0 p-lg-2" >
-                           <img src="source/gallery/chernobyl-1527.jpg" class="img-fluid card-img rounded-4 p-1" alt="Chernobyl picture">
-                        </div>
-                        <div class="col-12 col-lg-8 mt-2">
-                           <div class="card-body p-0 m-0 g-0 gap-0 ">
-                              <div class="col-12 ">
-                                 <ul class="d-flex flex-wrap">
-                                    <li class="fm-infos">
-                                       <strong>ژانر</strong><i class="separator"></i>
-                                       <hr>
-                                       <div class="fm-info-body">     <a href="#" rel="tag">درام</a> , <a href="#" rel="tag">کمدی</a>   </div>
-                                    </li>
-                                    <li class="fm-infos">
-                                       <strong>وضعیت پخش</strong><i class="separator"></i>
-                                       <div class="fm-info-body">تمدید شده برای فصل چهارم</div>
-                                    </li>
-                                    <li class="fm-infos fm-info-link">
-                                       <strong>محصول</strong><i class="separator"></i>
-                                       <div class="fm-info-body"><a href="#" rel="tag">انگلستان</a></div>
-                                    </li>
-                                    <li class="fm-infos fm-info-link">
-                                       <strong >زبان</strong><i class="separator"></i>
-                                       <div class="fm-info-body"><a href="#">انگلیسی</a></div>
-                                    </li>
-                                    <li class="fm-infos ">
-                                       <strong>مدت زمان</strong><i class="separator"></i>
-                                       <div class="fm-info-body">45 دقیقه</div>
-                                    </li>
-                                    <li class="mt-4 p-2" style="text-align: justify;">
-                                       <h6 style="line-height: 24px;" class="text-end" >
-                                          چرنوبیل، ماجرای واقعی یکی از بزرگترین فجایع انسانی در تاریخ است و داستان شجاعت زنان و مردانی را روایت می‌کند که خود را قربانی کردند تا اروپا را از فاجعه نجات دهند. این سریال کوتاه بر روی فاجعه نیروگاه هسته‌ای چرنوبیل که در آوریل ۱۹۸۶ در اوکراین (شوروی) رخ داد متمرکز است و آشکار می‌سازد که چرا و چگونه این حادثه رخ داد و به پنهانکاری شوروی اشاره می‌کند.                                        
-                                       </h6>
-                                    </li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                        <footer>
-                           <div class="row">
-                              <div class="col-11 m-auto mt-3 ">
-                                 <a class=" p-1 rounded d-flex align-self-center card-footer-text" ><i class="bi bi-bell-fill ms-2"></i>قسمت .... فصل .... اضافه شد </a>
-                              </div>
-                           </div>
-                        </footer>
-                        <footer class="d-flex justify-content-center justify-content-md-end mt-4">
-                           <div class="row col-10 col-md-auto ms-md-2">
-                              <a class="btn rounded-3 main-button" href="#" role="button"><i class="bi bi-download ms-2"></i>مشاهده بیشتر</a>
-                           </div>
-                        </footer>
-                     </div>
-                  </div>
-                  <hr class="mb-4 mt-4 color-line">
-                  <div class="card mb-3 col-12 p-2 shadow border" id="dark_card" >
-                     <div class="row">
-                        <div class="row col-12 d-flex justify-content-center justify-content-lg-start">
-                           <h4 class="col-12 col-lg-6 header-text text-center mb-2">دانلود سریال Attack On Titan </h4>
-                           <p class="col-12 col-lg-6 text-center shadow rounded-pill header-pill px-4">زیرنویس فارسی</p>
-                        </div>
-                        <div class="col-9 col-md-8 col-lg-4 m-auto p-0 p-lg-2" >
-                           <img src="source/gallery/attack-on-titan-1317.jpg" class="img-fluid card-img rounded-4 p-1" alt="attack-on-titan picture">
-                        </div>
-                        <div class="col-12 col-lg-8 mt-2">
-                           <div class="card-body p-0 m-0 g-0 gap-0 ">
-                              <div class="col-12 ">
-                                 <ul class="d-flex flex-wrap">
-                                    <li class="fm-infos">
-                                       <strong>ژانر</strong><i class="separator"></i>
-                                       <hr>
-                                       <div class="fm-info-body">     <a href="#" rel="tag">درام</a> , <a href="#" rel="tag">کمدی</a>   </div>
-                                    </li>
-                                    <li class="fm-infos">
-                                       <strong>وضعیت پخش</strong><i class="separator"></i>
-                                       <div class="fm-info-body">تمدید شده برای فصل چهارم</div>
-                                    </li>
-                                    <li class="fm-infos fm-info-link">
-                                       <strong>محصول</strong><i class="separator"></i>
-                                       <div class="fm-info-body"><a href="#" rel="tag">انگلستان</a></div>
-                                    </li>
-                                    <li class="fm-infos fm-info-link">
-                                       <strong >زبان</strong><i class="separator"></i>
-                                       <div class="fm-info-body"><a href="#">انگلیسی</a></div>
-                                    </li>
-                                    <li class="fm-infos ">
-                                       <strong>مدت زمان</strong><i class="separator"></i>
-                                       <div class="fm-info-body">45 دقیقه</div>
-                                    </li>
-                                    <li class="mt-4 p-2" style="text-align: justify;">
-                                       <h6 style="line-height: 27px;" class="text-end" >
-                                          این انیمه داستان دنیایی آخرالزمانی را روایت میکند که بر اثر حادثه ای نامشخص پر از تایتان های (غول های) آدم خوار شده که هیکل های بزرگی دارند و هر انسانی را که ببینند شکار میکنند و میخورند. تنها انسان های باقیمانده در شهری با دیوارهای بلند زندگی میکنند که آن ها را از تایتان های آدم خوار پشت دیوار در امان نگه داشته است.                                        
-                                       </h6>
-                                    </li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                        <footer>
-                           <div class="row">
-                              <div class="col-11 m-auto mt-3 ">
-                                 <a class=" p-1 rounded d-flex align-self-center card-footer-text" ><i class="bi bi-bell-fill ms-2"></i>قسمت .... فصل .... اضافه شد </a>
-                              </div>
-                           </div>
-                        </footer>
-                        <footer class="d-flex justify-content-center justify-content-md-end mt-4">
-                           <div class="row col-10 col-md-auto ms-md-2">
-                              <a class="btn rounded-3 main-button" href="#" role="button"><i class="bi bi-download ms-2"></i>مشاهده بیشتر</a>
-                           </div>
-                        </footer>
-                     </div>
-                  </div>
-                  <hr class="mb-4 mt-4 color-line">
-                  <div class="card mb-3 col-12 p-2 shadow border" id="dark_card" >
-                     <div class="row">
-                        <div class="row col-12 d-flex justify-content-center justify-content-lg-start">
-                           <h4 class="col-12 col-lg-6 header-text text-center mb-2">دانلود سریال The Walking Dead </h4>
-                           <p class="col-12 col-lg-6 text-center shadow rounded-pill header-pill px-4">زیرنویس فارسی</p>
-                        </div>
-                        <div class="col-9 col-md-8 col-lg-4 m-auto p-0 p-lg-2" >
-                           <img src="source/gallery/the-walking-dead-dead-city-14522.jpg" class="img-fluid card-img rounded-4 p-1" alt="the-walking-dead picture">
-                        </div>
-                        <div class="col-12 col-lg-8 mt-2">
-                           <div class="card-body p-0 m-0 g-0 gap-0 ">
-                              <div class="col-12 ">
-                                 <ul class="d-flex flex-wrap">
-                                    <li class="fm-infos">
-                                       <strong>ژانر</strong><i class="separator"></i>
-                                       <hr>
-                                       <div class="fm-info-body">     <a href="#" rel="tag">درام</a> , <a href="#" rel="tag">کمدی</a>   </div>
-                                    </li>
-                                    <li class="fm-infos">
-                                       <strong>وضعیت پخش</strong><i class="separator"></i>
-                                       <div class="fm-info-body">تمدید شده برای فصل چهارم</div>
-                                    </li>
-                                    <li class="fm-infos fm-info-link">
-                                       <strong>محصول</strong><i class="separator"></i>
-                                       <div class="fm-info-body"><a href="#" rel="tag">انگلستان</a></div>
-                                    </li>
-                                    <li class="fm-infos fm-info-link">
-                                       <strong >زبان</strong><i class="separator"></i>
-                                       <div class="fm-info-body"><a href="#">انگلیسی</a></div>
-                                    </li>
-                                    <li class="fm-infos ">
-                                       <strong>مدت زمان</strong><i class="separator"></i>
-                                       <div class="fm-info-body">45 دقیقه</div>
-                                    </li>
-                                    <li class="mt-4 p-2" style="text-align: justify;">
-                                       <h6 style="line-height: 27px;" class="text-end" >
-                                          سریال مردگان متحرک: شهر مرده (The Walking Dead: Dead City) چهارمین اسپین آف سریال مردگان متحرک و به طور کلی پنجمین سری از فرنچایز مردگان متحرک است. داستان این سریال بر دو شخصیت مگی و نیگان تمرکز دارد که با همدیگر به شهر منهتن سفر میکنند تا هرشل پسر گمشده مگی را از دست شخصیت شروری که قبلا یکی از افراد گروه نیگان بوده نجات بدهند.                                       
-                                       </h6>
-                                    </li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                        <footer>
-                           <div class="row">
-                              <div class="col-11 m-auto mt-3 ">
-                                 <a class=" p-1 rounded d-flex align-self-center card-footer-text" ><i class="bi bi-bell-fill ms-2"></i>قسمت .... فصل .... اضافه شد </a>
-                              </div>
-                           </div>
-                        </footer>
-                        <footer class="d-flex justify-content-center justify-content-md-end mt-4">
-                           <div class="row col-10 col-md-auto ms-md-2">
-                              <a class="btn rounded-3 main-button" href="#" role="button"><i class="bi bi-download ms-2"></i>مشاهده بیشتر</a>
-                           </div>
-                        </footer>
-                     </div>
-                  </div>
-                  <hr class="mb-4 mt-4 color-line">
-                  <div class="card mb-3 col-12 p-2 shadow border" id="dark_card" >
+
+
+                  <div class="card mb-3 col-12 p-2 shadow border p-4" id="dark_card" >
                      <div class="row">
                         <div class="row col-12 d-flex justify-content-center justify-content-lg-start">
                            <h4 class="col-12 col-lg-6 header-text text-center mb-2">دانلود سریال Friends </h4>
                            <p class="col-12 col-lg-6 text-center shadow rounded-pill header-pill px-4">زیرنویس فارسی</p>
                         </div>
-                        <div class="col-9 col-md-8 col-lg-4 m-auto p-0 p-lg-2" >
-                           <img src="source/gallery/friends-1517.jpg" class="img-fluid card-img rounded-4 p-1" alt="friends picture">
+                        <div class="col-9 col-md-8 col-lg-4 p-0" >
+                           <img src="source/gallery/the-walking-dead-dead-city-14522.jpg" class="img-fluid card-img rounded-4" alt="friends picture">
                         </div>
                         <div class="col-12 col-lg-8 mt-2">
                            <div class="card-body p-0 m-0 g-0 gap-0 ">
@@ -493,14 +202,305 @@
                         </div>
                         <footer>
                            <div class="row">
-                              <div class="col-11 m-auto mt-3 ">
-                                 <a class=" p-1 rounded d-flex align-self-center card-footer-text" ><i class="bi bi-bell-fill ms-2"></i>قسمت .... فصل .... اضافه شد </a>
+                              <div class="col-11 mt-3 ">
+                                 <a class=" rounded d-flex align-self-center card-footer-text p-1" ><i class="bi bi-bell-fill ms-2"></i>قسمت .... فصل .... اضافه شد </a>
                               </div>
                            </div>
                         </footer>
-                        <footer class="d-flex justify-content-center justify-content-md-end mt-4">
-                           <div class="row col-10 col-md-auto ms-md-2">
-                              <a class="btn rounded-3 main-button" href="#" role="button"><i class="bi bi-download ms-2"></i>مشاهده بیشتر</a>
+                        <footer class="mt-4">
+                           <div class="row col-10 col-md-auto ">
+                                    <button class="learn-more"><span class="circle" aria-hidden="true"><span class="icon arrow"></span></span><span class="button-text">بیشتر بدانید</span></button>
+                           </div>
+                        </footer>
+                     </div>
+                  </div>
+
+                  <hr class="mb-4 mt-4 color-line">
+                  <div class="card mb-3 col-12 p-2 shadow border p-4" id="dark_card" >
+                     <div class="row">
+                        <div class="row col-12 d-flex justify-content-center justify-content-lg-start">
+                           <h4 class="col-12 col-lg-6 header-text text-center mb-2">دانلود سریال Friends </h4>
+                           <p class="col-12 col-lg-6 text-center shadow rounded-pill header-pill px-4">زیرنویس فارسی</p>
+                        </div>
+                        <div class="col-9 col-md-8 col-lg-4 p-0" >
+                           <img src="source/gallery/chernobyl-1527.jpg" class="img-fluid card-img rounded-4" alt="friends picture">
+                        </div>
+                        <div class="col-12 col-lg-8 mt-2">
+                           <div class="card-body p-0 m-0 g-0 gap-0 ">
+                              <div class="col-12 ">
+                                 <ul class="d-flex flex-wrap">
+                                    <li class="fm-infos">
+                                       <strong>ژانر</strong><i class="separator"></i>
+                                       <hr>
+                                       <div class="fm-info-body">     <a href="#" rel="tag">درام</a> , <a href="#" rel="tag">کمدی</a>   </div>
+                                    </li>
+                                    <li class="fm-infos">
+                                       <strong>وضعیت پخش</strong><i class="separator"></i>
+                                       <div class="fm-info-body">تمدید شده برای فصل چهارم</div>
+                                    </li>
+                                    <li class="fm-infos fm-info-link">
+                                       <strong>محصول</strong><i class="separator"></i>
+                                       <div class="fm-info-body"><a href="#" rel="tag">انگلستان</a></div>
+                                    </li>
+                                    <li class="fm-infos fm-info-link">
+                                       <strong >زبان</strong><i class="separator"></i>
+                                       <div class="fm-info-body"><a href="#">انگلیسی</a></div>
+                                    </li>
+                                    <li class="fm-infos ">
+                                       <strong>مدت زمان</strong><i class="separator"></i>
+                                       <div class="fm-info-body">45 دقیقه</div>
+                                    </li>
+                                    <li class="mt-4 p-2" style="text-align: justify;">
+                                       <h6 style="line-height: 27px;" class="text-end" >
+                                          دوستان یا فرندز (به انگلیسی: Friends) یک مجموعه کمدی موقعیت آمریکایی است که توسط دیوید کرین و مارتا کافمن ساخته شد و از ۲۲ سپتامبر ۱۹۹۴ تا ۶ مهٔ ۲۰۰۴ از شبکهٔ ان‌بی‌سی پخش گردید. این مجموعه دارای ده فصل است و هنوز در شبکه‌های مختلف در حال بازبخش می‌باشد. داستان آن دربارهٔ شش دوست است که در منهتن نیویورک زندگی می‌کنند                          
+                                       </h6>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <footer>
+                           <div class="row">
+                              <div class="col-11 mt-3 ">
+                                 <a class=" rounded d-flex align-self-center card-footer-text p-1" ><i class="bi bi-bell-fill ms-2"></i>قسمت .... فصل .... اضافه شد </a>
+                              </div>
+                           </div>
+                        </footer>
+                        <footer class="mt-4">
+                           <div class="row col-10 col-md-auto ">
+                                    <button class="learn-more"><span class="circle" aria-hidden="true"><span class="icon arrow"></span></span><span class="button-text">بیشتر بدانید</span></button>
+                           </div>
+                        </footer>
+                     </div>
+                  </div>
+                  <hr class="mb-4 mt-4 color-line">
+                  <div class="card mb-3 col-12 p-2 shadow border p-4" id="dark_card" >
+                     <div class="row">
+                        <div class="row col-12 d-flex justify-content-center justify-content-lg-start">
+                           <h4 class="col-12 col-lg-6 header-text text-center mb-2">دانلود سریال Friends </h4>
+                           <p class="col-12 col-lg-6 text-center shadow rounded-pill header-pill px-4">زیرنویس فارسی</p>
+                        </div>
+                        <div class="col-9 col-md-8 col-lg-4 p-0" >
+                           <img src="source/gallery/game-of-thrones-1451.jpg" class="img-fluid card-img rounded-4" alt="friends picture">
+                        </div>
+                        <div class="col-12 col-lg-8 mt-2">
+                           <div class="card-body p-0 m-0 g-0 gap-0 ">
+                              <div class="col-12 ">
+                                 <ul class="d-flex flex-wrap">
+                                    <li class="fm-infos">
+                                       <strong>ژانر</strong><i class="separator"></i>
+                                       <hr>
+                                       <div class="fm-info-body">     <a href="#" rel="tag">درام</a> , <a href="#" rel="tag">کمدی</a>   </div>
+                                    </li>
+                                    <li class="fm-infos">
+                                       <strong>وضعیت پخش</strong><i class="separator"></i>
+                                       <div class="fm-info-body">تمدید شده برای فصل چهارم</div>
+                                    </li>
+                                    <li class="fm-infos fm-info-link">
+                                       <strong>محصول</strong><i class="separator"></i>
+                                       <div class="fm-info-body"><a href="#" rel="tag">انگلستان</a></div>
+                                    </li>
+                                    <li class="fm-infos fm-info-link">
+                                       <strong >زبان</strong><i class="separator"></i>
+                                       <div class="fm-info-body"><a href="#">انگلیسی</a></div>
+                                    </li>
+                                    <li class="fm-infos ">
+                                       <strong>مدت زمان</strong><i class="separator"></i>
+                                       <div class="fm-info-body">45 دقیقه</div>
+                                    </li>
+                                    <li class="mt-4 p-2" style="text-align: justify;">
+                                       <h6 style="line-height: 27px;" class="text-end" >
+                                          دوستان یا فرندز (به انگلیسی: Friends) یک مجموعه کمدی موقعیت آمریکایی است که توسط دیوید کرین و مارتا کافمن ساخته شد و از ۲۲ سپتامبر ۱۹۹۴ تا ۶ مهٔ ۲۰۰۴ از شبکهٔ ان‌بی‌سی پخش گردید. این مجموعه دارای ده فصل است و هنوز در شبکه‌های مختلف در حال بازبخش می‌باشد. داستان آن دربارهٔ شش دوست است که در منهتن نیویورک زندگی می‌کنند                          
+                                       </h6>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <footer>
+                           <div class="row">
+                              <div class="col-11 mt-3 ">
+                                 <a class=" rounded d-flex align-self-center card-footer-text p-1" ><i class="bi bi-bell-fill ms-2"></i>قسمت .... فصل .... اضافه شد </a>
+                              </div>
+                           </div>
+                        </footer>
+                        <footer class="mt-4">
+                           <div class="row col-10 col-md-auto ">
+                                    <button class="learn-more"><span class="circle" aria-hidden="true"><span class="icon arrow"></span></span><span class="button-text">بیشتر بدانید</span></button>
+                           </div>
+                        </footer>
+                     </div>
+                  </div>
+                  <hr class="mb-4 mt-4 color-line">
+                  <div class="card mb-3 col-12 p-2 shadow border p-4" id="dark_card" >
+                     <div class="row">
+                        <div class="row col-12 d-flex justify-content-center justify-content-lg-start">
+                           <h4 class="col-12 col-lg-6 header-text text-center mb-2">دانلود سریال Friends </h4>
+                           <p class="col-12 col-lg-6 text-center shadow rounded-pill header-pill px-4">زیرنویس فارسی</p>
+                        </div>
+                        <div class="col-9 col-md-8 col-lg-4 p-0" >
+                           <img src="source/gallery/kaleidoscope-15058.jpg" class="img-fluid card-img rounded-4" alt="friends picture">
+                        </div>
+                        <div class="col-12 col-lg-8 mt-2">
+                           <div class="card-body p-0 m-0 g-0 gap-0 ">
+                              <div class="col-12 ">
+                                 <ul class="d-flex flex-wrap">
+                                    <li class="fm-infos">
+                                       <strong>ژانر</strong><i class="separator"></i>
+                                       <hr>
+                                       <div class="fm-info-body">     <a href="#" rel="tag">درام</a> , <a href="#" rel="tag">کمدی</a>   </div>
+                                    </li>
+                                    <li class="fm-infos">
+                                       <strong>وضعیت پخش</strong><i class="separator"></i>
+                                       <div class="fm-info-body">تمدید شده برای فصل چهارم</div>
+                                    </li>
+                                    <li class="fm-infos fm-info-link">
+                                       <strong>محصول</strong><i class="separator"></i>
+                                       <div class="fm-info-body"><a href="#" rel="tag">انگلستان</a></div>
+                                    </li>
+                                    <li class="fm-infos fm-info-link">
+                                       <strong >زبان</strong><i class="separator"></i>
+                                       <div class="fm-info-body"><a href="#">انگلیسی</a></div>
+                                    </li>
+                                    <li class="fm-infos ">
+                                       <strong>مدت زمان</strong><i class="separator"></i>
+                                       <div class="fm-info-body">45 دقیقه</div>
+                                    </li>
+                                    <li class="mt-4 p-2" style="text-align: justify;">
+                                       <h6 style="line-height: 27px;" class="text-end" >
+                                          دوستان یا فرندز (به انگلیسی: Friends) یک مجموعه کمدی موقعیت آمریکایی است که توسط دیوید کرین و مارتا کافمن ساخته شد و از ۲۲ سپتامبر ۱۹۹۴ تا ۶ مهٔ ۲۰۰۴ از شبکهٔ ان‌بی‌سی پخش گردید. این مجموعه دارای ده فصل است و هنوز در شبکه‌های مختلف در حال بازبخش می‌باشد. داستان آن دربارهٔ شش دوست است که در منهتن نیویورک زندگی می‌کنند                          
+                                       </h6>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <footer>
+                           <div class="row">
+                              <div class="col-11 mt-3 ">
+                                 <a class=" rounded d-flex align-self-center card-footer-text p-1" ><i class="bi bi-bell-fill ms-2"></i>قسمت .... فصل .... اضافه شد </a>
+                              </div>
+                           </div>
+                        </footer>
+                        <footer class="mt-4">
+                           <div class="row col-10 col-md-auto ">
+                                    <button class="learn-more"><span class="circle" aria-hidden="true"><span class="icon arrow"></span></span><span class="button-text">بیشتر بدانید</span></button>
+                           </div>
+                        </footer>
+                     </div>
+                  </div>
+                  <hr class="mb-4 mt-4 color-line">
+                  <div class="card mb-3 col-12 p-2 shadow border p-4" id="dark_card" >
+                     <div class="row">
+                        <div class="row col-12 d-flex justify-content-center justify-content-lg-start">
+                           <h4 class="col-12 col-lg-6 header-text text-center mb-2">دانلود سریال Friends </h4>
+                           <p class="col-12 col-lg-6 text-center shadow rounded-pill header-pill px-4">زیرنویس فارسی</p>
+                        </div>
+                        <div class="col-9 col-md-8 col-lg-4 p-0" >
+                           <img src="source/gallery/the-last-of-us-7.jpg" class="img-fluid card-img rounded-4" alt="friends picture">
+                        </div>
+                        <div class="col-12 col-lg-8 mt-2">
+                           <div class="card-body p-0 m-0 g-0 gap-0 ">
+                              <div class="col-12 ">
+                                 <ul class="d-flex flex-wrap">
+                                    <li class="fm-infos">
+                                       <strong>ژانر</strong><i class="separator"></i>
+                                       <hr>
+                                       <div class="fm-info-body">     <a href="#" rel="tag">درام</a> , <a href="#" rel="tag">کمدی</a>   </div>
+                                    </li>
+                                    <li class="fm-infos">
+                                       <strong>وضعیت پخش</strong><i class="separator"></i>
+                                       <div class="fm-info-body">تمدید شده برای فصل چهارم</div>
+                                    </li>
+                                    <li class="fm-infos fm-info-link">
+                                       <strong>محصول</strong><i class="separator"></i>
+                                       <div class="fm-info-body"><a href="#" rel="tag">انگلستان</a></div>
+                                    </li>
+                                    <li class="fm-infos fm-info-link">
+                                       <strong >زبان</strong><i class="separator"></i>
+                                       <div class="fm-info-body"><a href="#">انگلیسی</a></div>
+                                    </li>
+                                    <li class="fm-infos ">
+                                       <strong>مدت زمان</strong><i class="separator"></i>
+                                       <div class="fm-info-body">45 دقیقه</div>
+                                    </li>
+                                    <li class="mt-4 p-2" style="text-align: justify;">
+                                       <h6 style="line-height: 27px;" class="text-end" >
+                                          دوستان یا فرندز (به انگلیسی: Friends) یک مجموعه کمدی موقعیت آمریکایی است که توسط دیوید کرین و مارتا کافمن ساخته شد و از ۲۲ سپتامبر ۱۹۹۴ تا ۶ مهٔ ۲۰۰۴ از شبکهٔ ان‌بی‌سی پخش گردید. این مجموعه دارای ده فصل است و هنوز در شبکه‌های مختلف در حال بازبخش می‌باشد. داستان آن دربارهٔ شش دوست است که در منهتن نیویورک زندگی می‌کنند                          
+                                       </h6>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <footer>
+                           <div class="row">
+                              <div class="col-11 mt-3 ">
+                                 <a class=" rounded d-flex align-self-center card-footer-text p-1" ><i class="bi bi-bell-fill ms-2"></i>قسمت .... فصل .... اضافه شد </a>
+                              </div>
+                           </div>
+                        </footer>
+                        <footer class="mt-4">
+                           <div class="row col-10 col-md-auto ">
+                                    <button class="learn-more"><span class="circle" aria-hidden="true"><span class="icon arrow"></span></span><span class="button-text">بیشتر بدانید</span></button>
+                           </div>
+                        </footer>
+                     </div>
+                  </div>
+                  <hr class="mb-4 mt-4 color-line">
+                  <div class="card mb-3 col-12 p-2 shadow border p-4" id="dark_card" >
+                     <div class="row">
+                        <div class="row col-12 d-flex justify-content-center justify-content-lg-start">
+                           <h4 class="col-12 col-lg-6 header-text text-center mb-2">دانلود سریال Friends </h4>
+                           <p class="col-12 col-lg-6 text-center shadow rounded-pill header-pill px-4">زیرنویس فارسی</p>
+                        </div>
+                        <div class="col-9 col-md-8 col-lg-4 p-0" >
+                           <img src="source/gallery/friends-1517.jpg" class="img-fluid card-img rounded-4" alt="friends picture">
+                        </div>
+                        <div class="col-12 col-lg-8 mt-2">
+                           <div class="card-body p-0 m-0 g-0 gap-0 ">
+                              <div class="col-12 ">
+                                 <ul class="d-flex flex-wrap">
+                                    <li class="fm-infos">
+                                       <strong>ژانر</strong><i class="separator"></i>
+                                       <hr>
+                                       <div class="fm-info-body">     <a href="#" rel="tag">درام</a> , <a href="#" rel="tag">کمدی</a>   </div>
+                                    </li>
+                                    <li class="fm-infos">
+                                       <strong>وضعیت پخش</strong><i class="separator"></i>
+                                       <div class="fm-info-body">تمدید شده برای فصل چهارم</div>
+                                    </li>
+                                    <li class="fm-infos fm-info-link">
+                                       <strong>محصول</strong><i class="separator"></i>
+                                       <div class="fm-info-body"><a href="#" rel="tag">انگلستان</a></div>
+                                    </li>
+                                    <li class="fm-infos fm-info-link">
+                                       <strong >زبان</strong><i class="separator"></i>
+                                       <div class="fm-info-body"><a href="#">انگلیسی</a></div>
+                                    </li>
+                                    <li class="fm-infos ">
+                                       <strong>مدت زمان</strong><i class="separator"></i>
+                                       <div class="fm-info-body">45 دقیقه</div>
+                                    </li>
+                                    <li class="mt-4 p-2" style="text-align: justify;">
+                                       <h6 style="line-height: 27px;" class="text-end" >
+                                          دوستان یا فرندز (به انگلیسی: Friends) یک مجموعه کمدی موقعیت آمریکایی است که توسط دیوید کرین و مارتا کافمن ساخته شد و از ۲۲ سپتامبر ۱۹۹۴ تا ۶ مهٔ ۲۰۰۴ از شبکهٔ ان‌بی‌سی پخش گردید. این مجموعه دارای ده فصل است و هنوز در شبکه‌های مختلف در حال بازبخش می‌باشد. داستان آن دربارهٔ شش دوست است که در منهتن نیویورک زندگی می‌کنند                          
+                                       </h6>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <footer>
+                           <div class="row">
+                              <div class="col-11 mt-3 ">
+                                 <a class=" rounded d-flex align-self-center card-footer-text p-1" ><i class="bi bi-bell-fill ms-2"></i>قسمت .... فصل .... اضافه شد </a>
+                              </div>
+                           </div>
+                        </footer>
+                        <footer class="mt-4">
+                           <div class="row col-10 col-md-auto ">
+                                    <button class="learn-more"><span class="circle" aria-hidden="true"><span class="icon arrow"></span></span><span class="button-text">بیشتر بدانید</span></button>
                            </div>
                         </footer>
                      </div>
@@ -848,12 +848,11 @@
                         </div>
                      </header>
                      <hr class="mb-2 mt-2 color-line col-11 m-auto">
-                     <div class="card">
-                        <div class="row row-cols-1  g-3 text-center mb-3 me-2 ms-2">
-                           <div class="col">
+                        <div class="row row-cols-1 g-3 text-center mb-3 me-2 ms-2">
+                           <div class="col mt-4">
                               <a href="#">
                                  <div class="card p-0">
-                                    <section class="d-flex align-items-center me-3 ms-3">
+                                    <section class="d-flex align-items-center m-2">
                                        <div class="col-4"><img src="source/gallery/game-of-thrones-1451.jpg" class=" rounded aside-pic card-img"  alt="..."></div>
                                        <div class=" row col me-1" >
                                           <div class="col-12 d-flex justify-content-start">
@@ -871,7 +870,7 @@
                            <div class="col">
                               <a href="#">
                                  <div class="card p-0">
-                                    <section class="d-flex align-items-center me-3 ms-3">
+                                    <section class="d-flex align-items-center m-2">
                                        <div class="col-4"><img src="source/gallery/kaleidoscope-15058.jpg" class=" rounded aside-pic card-img" alt="..."></div>
                                        <div class=" row col me-1" >
                                           <div class="col-12 d-flex justify-content-start" style="font-size: 2vw;">
@@ -889,7 +888,7 @@
                            <div class="col">
                               <a href="#">
                                  <div class="card  p-0">
-                                    <section class="d-flex align-items-center me-3 ms-3">
+                                    <section class="d-flex align-items-center m-2">
                                        <div class="col-4"><img src="source/gallery/the-walking-dead-dead-city-14522.jpg" class=" rounded aside-pic card-img" alt="..."></div>
                                        <div class=" row col me-1" >
                                           <div class="col-12 d-flex justify-content-start">
@@ -907,7 +906,7 @@
                            <div class="col">
                               <a href="#">
                                  <div class="card  p-0">
-                                    <section class="d-flex align-items-center me-3 ms-3 justify-content-between">
+                                    <section class="d-flex align-items-center m-2 ">
                                        <div class="col-4"><img src="source/gallery/the-last-of-us-7.jpg" class=" rounded aside-pic card-img" alt="..."></div>
                                        <div class=" row col me-1" >
                                           <div class="col-12 d-flex justify-content-start">
@@ -925,7 +924,7 @@
                            <div class="col">
                               <a href="#">
                                  <div class="card  p-0">
-                                    <section class="d-flex align-items-center me-3 ms-3">
+                                    <section class="d-flex align-items-center m-2">
                                        <div class="col-4"><img src="source/gallery/friends-1517.jpg" class=" rounded aside-pic card-img" alt="..."></div>
                                        <div class=" row col me-1" >
                                           <div class="col-12 d-flex justify-content-start">
@@ -943,7 +942,7 @@
                            <div class="col">
                               <a href="#">
                                  <div class="card">
-                                    <section class="d-flex align-items-center me-3 ms-3">
+                                    <section class="d-flex align-items-center m-2">
                                        <div class="col-4"><img src="source/gallery/attack-on-titan-1317.jpg" class=" rounded aside-pic card-img" alt="..."></div>
                                        <div class=" row col me-1" >
                                           <div class="col-12 d-flex justify-content-start">
@@ -959,7 +958,6 @@
                               </a>
                            </div>
                         </div>
-                     </div>
                   </div>
                </section>
                <!-- aside-part3-end -->
@@ -980,9 +978,11 @@
                <div class="toast show shadow" role="alert" aria-live="assertive" aria-atomic="true" data-bs-dismiss="toast">
                   <div class="toast-header">
                      <img src="source/gallery/brand-1.png" class="rounded me-2 " alt="..." style="height: 40px; width: 45px;">
-                     <h6 class=" me-4"><em>مدیریت سایت</em></h6>
+                     <div class="toast-text d-flex align-items-baseline mb-2">
+                        <h6 class=" me-4">مدیریت سایت</h6>
                      <small class="me-2">5 ثانیه قبل</small>
-                     <button type="button" class="btn-close me-2" data-bs-dismiss="toast" aria-label="Close"></button>
+                     <button type="button" class="btn-close me-3" data-bs-dismiss="toast" aria-label="Close"></button>
+                     </div>
                   </div>
                   <h6 class="toast-body">به سایت ما خوش اومدی اگه مشکلی بود<a href="#" class="me-1 ms-1">از اینجا</a>بهمون خبر بده</h6>
                </div>
